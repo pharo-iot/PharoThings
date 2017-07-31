@@ -1,0 +1,4 @@
+*PharoThings-GTTools
+gtValueMorph
+
+	^'' asMorph

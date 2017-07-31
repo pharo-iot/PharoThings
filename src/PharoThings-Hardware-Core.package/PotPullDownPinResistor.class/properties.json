@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotPudPinResistor",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotPullDownPinResistor",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+controlling
+connect
+	self subclassResponsibility 

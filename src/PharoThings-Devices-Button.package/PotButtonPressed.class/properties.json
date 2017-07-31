@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DenisKudryashov 5/11/2017 23:33",
+	"super" : "PotDeviceEvent",
+	"category" : "PharoThings-Devices-Button",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotButtonPressed",
+	"type" : "normal"
+}

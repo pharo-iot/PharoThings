@@ -1,0 +1,3 @@
+accessing
+peripherals
+	^{affectedPin. button}

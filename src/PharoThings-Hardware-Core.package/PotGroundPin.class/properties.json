@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotEnergyPin",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotGroundPin",
+	"type" : "normal"
+}

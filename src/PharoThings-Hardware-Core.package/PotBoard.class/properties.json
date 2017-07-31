@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [
+		"current"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"connectors",
+		"driver",
+		"devices"
+	],
+	"name" : "PotBoard",
+	"type" : "normal"
+}

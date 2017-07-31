@@ -1,0 +1,3 @@
+initialization
+sclPinId
+	self subclassResponsibility 

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotGPIOPin",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotClockGPIOPin",
+	"type" : "normal"
+}

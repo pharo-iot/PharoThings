@@ -1,0 +1,3 @@
+*PharoThings-RemoteToolsServer
+seamlessDefaultTransferStrategy
+	^SeamlessTransferStrategy defaultByReference

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoardDriver",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pins"
+	],
+	"name" : "PotBoardDriverDummy",
+	"type" : "normal"
+}

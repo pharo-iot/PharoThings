@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoardDriver",
+	"category" : "PharoThings-Hardware-RaspberryPi",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lib"
+	],
+	"name" : "RpiWiringPiDriver",
+	"type" : "normal"
+}

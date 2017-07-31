@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "PharoThings-GTTools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pin"
+	],
+	"name" : "PotDigitalValueMorph",
+	"type" : "normal"
+}

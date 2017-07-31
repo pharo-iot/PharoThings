@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotDigitalValueMorph",
+	"category" : "PharoThings-GTTools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotDigitalOutputValueMorph",
+	"type" : "normal"
+}

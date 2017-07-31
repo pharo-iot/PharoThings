@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoardPinTestCase",
+	"category" : "PharoThings-Hardware-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotBoardPinTests",
+	"type" : "normal"
+}

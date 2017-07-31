@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DenisKudryashov 5/11/2017 17:09",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-Switch",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"button",
+		"affectedPin"
+	],
+	"name" : "PotSwitch",
+	"type" : "normal"
+}

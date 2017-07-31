@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotI2CPin",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotSDAPin",
+	"type" : "normal"
+}

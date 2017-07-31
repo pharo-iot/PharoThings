@@ -1,0 +1,3 @@
+controlling
+disconnectFromBoard
+	firmata disconnect

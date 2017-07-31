@@ -1,0 +1,5 @@
+*PharoThings-RemoteToolsServer
+prepareValueTransferBy: aSeamlessObjectTransporter
+
+	aSeamlessObjectTransporter transferByReference: connectors.
+	aSeamlessObjectTransporter transferByReference: devices

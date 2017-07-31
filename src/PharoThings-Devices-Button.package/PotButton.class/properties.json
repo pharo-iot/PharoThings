@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "DenisKudryashov 5/11/2017 23:32",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-Button",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"announcer",
+		"gpioPin",
+		"stateProcess",
+		"lastState",
+		"pollingRate",
+		"releaseState",
+		"energyPin"
+	],
+	"name" : "PotButton",
+	"type" : "normal"
+}

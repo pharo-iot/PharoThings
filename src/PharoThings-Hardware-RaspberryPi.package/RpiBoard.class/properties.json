@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoard",
+	"category" : "PharoThings-Hardware-RaspberryPi",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RpiBoard",
+	"type" : "normal"
+}

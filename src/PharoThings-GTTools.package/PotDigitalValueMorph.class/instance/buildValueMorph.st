@@ -1,0 +1,3 @@
+initialization
+buildValueMorph
+	self subclassResponsibility 

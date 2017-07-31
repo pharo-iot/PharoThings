@@ -1,0 +1,4 @@
+*PharoThings-RemoteToolsServer
+prepareValueTransferBy: aSeamlessObjectTransporter
+
+	aSeamlessObjectTransporter transferByValue: position

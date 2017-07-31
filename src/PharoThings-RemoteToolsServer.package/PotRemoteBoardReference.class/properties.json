@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SeamlessObjectReference",
+	"category" : "PharoThings-RemoteToolsServer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotRemoteBoardReference",
+	"type" : "normal"
+}

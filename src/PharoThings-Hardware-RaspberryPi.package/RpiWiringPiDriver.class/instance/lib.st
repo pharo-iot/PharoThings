@@ -1,0 +1,3 @@
+accessing
+lib
+	^ lib

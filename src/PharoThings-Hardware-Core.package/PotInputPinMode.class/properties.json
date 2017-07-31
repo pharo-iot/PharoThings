@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotIOPinMode",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotInputPinMode",
+	"type" : "normal"
+}

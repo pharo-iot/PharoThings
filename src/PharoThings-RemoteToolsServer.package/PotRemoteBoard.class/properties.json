@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PharoThings-RemoteToolsServer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"proxy",
+		"localCopy"
+	],
+	"name" : "PotRemoteBoard",
+	"type" : "normal"
+}

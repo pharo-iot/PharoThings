@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TlpRemoteDoItReceiver",
+	"category" : "PharoThings-RemoteToolsClient",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"connector"
+	],
+	"name" : "PotRemoteConnectorDoItReceiver",
+	"type" : "normal"
+}

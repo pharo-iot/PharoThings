@@ -1,0 +1,4 @@
+transfer
+prepareValueTransferBy: aSeamlessObjectTransporter
+
+	aSeamlessObjectTransporter transferByDeepCopy: announcer 

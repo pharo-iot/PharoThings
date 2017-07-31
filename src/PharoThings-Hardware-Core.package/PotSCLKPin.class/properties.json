@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotSPIPin",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotSCLKPin",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+*PharoThings-Devices-Button
+configureConnectedButton: aBoardButton
+	aBoardButton connectToGroundPin 

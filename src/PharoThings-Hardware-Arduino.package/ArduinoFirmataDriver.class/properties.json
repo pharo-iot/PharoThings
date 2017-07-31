@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoardDriver",
+	"category" : "PharoThings-Hardware-Arduino",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"port",
+		"baudRate",
+		"firmata"
+	],
+	"name" : "ArduinoFirmataDriver",
+	"type" : "normal"
+}

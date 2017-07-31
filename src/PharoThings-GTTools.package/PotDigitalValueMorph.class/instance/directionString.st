@@ -1,0 +1,3 @@
+accessing
+directionString
+	self subclassResponsibility 

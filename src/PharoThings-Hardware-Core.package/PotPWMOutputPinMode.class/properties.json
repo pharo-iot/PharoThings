@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotOutputPinMode",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotPWMOutputPinMode",
+	"type" : "normal"
+}
