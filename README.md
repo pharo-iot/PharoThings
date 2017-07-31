@@ -9,7 +9,7 @@ It includes:
     - Arduino, driven by Firmata
     - Beaglebone, soon
 
-## Installation on server (on Raspberry)
+## Installation on Raspberry
 
 1) Download Pharo 6 and install server part of PharOThings:
 ```Smalltalk
@@ -49,8 +49,8 @@ Then inspect board:
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect
 ```
-Currently only model B is implemented (with revision 1 and 2). But running this code on any other board is not a problem. In that case pins will point to wrong phisical pins of your board. But you will get idea about what PharOThings is about.
-By the way modeling your specific board is very simple task (will be explained later). So you will be able support it by yourself and contribute to project.
+Currently only model B is implemented (with revision 1 and 2). But running this code on other boards will not break. In that case pins will point to wrong phisical pins of your board. But you will get idea about what PharOThings is about.
+By the way modeling your specific board is very simple task (will be explained later). So you are free to support it by yourself and contribute to project.
 
 
 
