@@ -52,7 +52,7 @@ remoteBoard inspect
 Currently only model B is implemented (with revision 1 and 2). But this code will not break on other boards. In that case pins will point to wrong phisical pins of your board. But tool will show working UI. And you will be able to control board by low level library (like WiringPi) using remote playground.
 
 By the way modeling specific board is very simple task (will be explained later). 
-So you are free to support it by yourself and contribute to project.
+You are free to support it by yourself and contribute to project.
 
 
 
