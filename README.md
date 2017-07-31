@@ -1,8 +1,8 @@
 # PharoThings
 
-Live programming platform for IoT projects based on Pharo.
+Live programming platform for IoT projects based on [Pharo](http://pharo.org).
 It includes:
-- development tools to lively program, explore and debug remote boards
+- development tools to lively program, explore and debug remote boards ([TelePharo](https://github.com/dionisiydk/TelePharo))
 - board modeling library which simplifies board configuration
 - various kind of board models:
     - Raspberry, driven by WiringPi library
