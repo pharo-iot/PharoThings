@@ -1,4 +1,4 @@
-# PharOThings
+# PharoThings
 
 Live programming platform for IoT projects based on Pharo.
 It includes:
@@ -11,11 +11,11 @@ It includes:
 
 ## Installation on Raspberry
 
-1) Download Pharo 6 and install server part of PharOThings:
+1) Download Pharo 6 and install server part of PharoThings:
 ```Smalltalk
 Metacello new
-  baseline: 'PharOThings';
-  repository: 'github://dionisiydk/PharOThings';
+  baseline: 'PharoThings';
+  repository: 'github://dionisiydk/PharoThings';
   load: 'RemoteToolsServer'
 ```
 Save image.
@@ -33,11 +33,11 @@ TlpRemoteUIManager registerOnPort: 40423
 In that case command line option --startServerOnPort is not needed.
 
 ## Connecting to board
-Install client part of PharOThings to your Pharo image:
+Install client part of PharoThings to your Pharo image:
 ```Smalltalk
 Metacello new
-  baseline: 'PharOThings';
-  repository: 'github://dionisiydk/PharOThings';
+  baseline: 'PharoThings';
+  repository: 'github://dionisiydk/PharoThings';
   load: 'RemoteToolsClient'
 ```
 Connect to running Raspberry image from playground:
