@@ -30,6 +30,11 @@ baseline: spec
 			package: #'PharoThings-Hardware-RaspberryPi' with: [
 				spec requires: #('PharoThings-Hardware-Core' #'WiringPi' ). ];
 			
+			baseline: 'Firmata' with: [
+				spec repository: 'github://pharo-iot/Firmata:v0.1.x'];			
+			package: #'PharoThings-Hardware-Arduino' with: [
+				spec requires: #('PharoThings-Hardware-Core' #'Firmata' ). ];
+						
 			package: #'PharoThings-RemoteToolsServer' with: [
 				spec requires: #('TelePharoServer' ). ];
 			package: #'PharoThings-RemoteToolsClient' with: [
@@ -37,7 +42,8 @@ baseline: spec
 		spec 
 			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-Button' #'PharoThings-Devices-Switch' );
 			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
-
+			group: 'Arduino' with: #('Hardware' #'PharoThings-Hardware-Arduino' );
+			
 			group: 'LocalDev' with: #('Raspberry' 'PharoThings-GTTools' 'Tests');
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
