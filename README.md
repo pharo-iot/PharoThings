@@ -15,7 +15,7 @@ It includes:
 ```Smalltalk
 Metacello new
   baseline: 'PharoThings';
-  repository: 'github://pharo-iot/PharoThings';
+  repository: 'github://pharo-iot/PharoThings/src';
   load: #(RemoteDevServer Raspberry).
 ```
 Save image.
@@ -37,7 +37,7 @@ Install client part of PharoThings to your Pharo image:
 ```Smalltalk
 Metacello new
   baseline: 'PharoThings';
-  repository: 'github://pharo-iot/PharoThings';
+  repository: 'github://pharo-iot/PharoThings/src';
   load: 'RemoteDev'
 ```
 Connect to running Raspberry image from playground:
