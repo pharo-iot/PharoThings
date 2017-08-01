@@ -22,17 +22,24 @@ baseline: spec
 			package: 'PharoThings-Hardware-Core';
 			package: 'PharoThings-Hardware-Core-Tests' with: [
 				spec requires: #('PharoThings-Hardware-Core' 'Mocketry' ). ];
+			
+			baseline: 'WiringPi' with: [
+				spec 
+					repository: 'github://pharo-iot/WiringPi:v0.1.x';
+					loads: 'Core' ];			
 			package: #'PharoThings-Hardware-RaspberryPi' with: [
-				spec requires: #('PharoThings-Hardware-Core' #'WiringPi-Core' ). ];
+				spec requires: #('PharoThings-Hardware-Core' #'WiringPi' ). ];
+			
 			package: #'PharoThings-RemoteToolsServer' with: [
 				spec requires: #('TelePharoServer' ). ];
 			package: #'PharoThings-RemoteToolsClient' with: [
-				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient'). ];
-			package: #'WiringPi-Core'.
+				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient'). ].
 		spec 
-			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Hardware-RaspberryPi' #'PharoThings-Devices-Button' #'PharoThings-Devices-Switch' );
-			group: 'LocalTools' with: #('Hardware' 'PharoThings-GTTools' );
-			group: 'RemoteToolsClient' with: #('Hardware' 'LocalTools' #'PharoThings-RemoteToolsClient' 'Tests');
-			group: 'RemoteToolsServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
+			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-Button' #'PharoThings-Devices-Switch' );
+			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
+
+			group: 'LocalDev' with: #('Raspberry' 'PharoThings-GTTools' 'Tests');
+			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
+			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );
-			group: 'default' with: #('LocalTools' 'Tests' )].
+			group: 'default' with: #('LocalDev')].
