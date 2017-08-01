@@ -16,7 +16,7 @@ It includes:
 Metacello new
   baseline: 'PharoThings';
   repository: 'github://pharo-iot/PharoThings';
-  load: 'RemoteDevServer'
+  load: #(RemoteDevServer Raspberry).
 ```
 Save image.
 
