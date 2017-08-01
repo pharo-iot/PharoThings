@@ -48,4 +48,4 @@ baseline: spec
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );
-			group: 'default' with: #('LocalDev')].
+			group: 'default' with: #('RemoteDev')].
