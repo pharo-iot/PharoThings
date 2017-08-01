@@ -44,7 +44,7 @@ baseline: spec
 			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
 			group: 'Arduino' with: #('Hardware' #'PharoThings-Hardware-Arduino' );
 			
-			group: 'LocalDev' with: #('Raspberry' 'PharoThings-GTTools' 'Tests');
+			group: 'LocalDev' with: #('Raspberry' 'Arduino' 'PharoThings-GTTools' 'Tests');
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );
