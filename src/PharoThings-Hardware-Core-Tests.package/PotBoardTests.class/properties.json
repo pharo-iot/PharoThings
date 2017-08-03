@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PharoThings-Hardware-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"driver",
+		"board"
+	],
+	"name" : "PotBoardTests",
+	"type" : "normal"
+}

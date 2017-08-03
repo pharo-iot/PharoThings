@@ -1,4 +1,4 @@
 accessing
 ioMode: aPinMode
 	ioMode := aPinMode.
-	board setIOMode: aPinMode into: self
+	board setIOMode: ioMode into: self

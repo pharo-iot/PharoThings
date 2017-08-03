@@ -1,4 +1,4 @@
 instance creation
 setUpNewCurrent
-	current ifNotNil: [ current disconnectDevices ].
+	current ifNotNil: [ current disconnect ].
 	current := self new
