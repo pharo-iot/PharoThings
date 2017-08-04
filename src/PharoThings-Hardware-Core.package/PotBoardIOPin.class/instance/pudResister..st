@@ -1,4 +1,4 @@
 accessing
 pudResister: aPinResisterClass
 	pudResister := aPinResisterClass.
-	board setPUDResister: aPinResisterClass into: self
+	board setPUDResister: pudResister into: self
