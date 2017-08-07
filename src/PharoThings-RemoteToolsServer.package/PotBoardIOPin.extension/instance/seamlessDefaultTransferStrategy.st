@@ -1,0 +1,3 @@
+*PharoThings-RemoteToolsServer
+seamlessDefaultTransferStrategy
+	^PotRemotePinTransferStrategy default

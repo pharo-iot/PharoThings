@@ -1,0 +1,3 @@
+initialization
+initialize
+	cachedMessages := #(id)

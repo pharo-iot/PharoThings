@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SeamlessTransferByReferenceStrategy",
+	"category" : "PharoThings-RemoteToolsServer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotRemotePinTransferStrategy",
+	"type" : "normal"
+}
