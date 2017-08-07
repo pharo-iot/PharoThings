@@ -7,4 +7,5 @@ gtInspectorActionsForDevice: aDevice
 		ifTrue: [ GLMGenericAction new action: [ aDevice disconnect ]; title: 'Disconnect']
 		ifFalse: [ GLMGenericAction new action: [ aDevice connect ]; title: 'Connect'].
 	
-	^{connectingAction. browseAction}
+	^{connectingAction. browseAction.
+		GLMGenericAction new action: [ aDevice delete ]; title: 'Delete'}
