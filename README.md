@@ -6,7 +6,7 @@ It includes:
 - board modeling library which simplifies board configuration
 
     - Raspberry, driven by [WiringPi library](http://wiringpi.com)
-    - Arduino, driven by [Firmata](https://github.com/firmata/arduino)
+    - Arduino, driven by [Firmata](https://github.com/firmata/arduino), soon
     - Beaglebone, soon
 
 ## Installation on Raspberry
