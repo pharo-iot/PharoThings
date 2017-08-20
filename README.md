@@ -60,7 +60,7 @@ remoteBoard openPlayground
 ![](doc/images/RaspRemotePlayground.png)
 
 By the way modeling specific board is very simple task (will be explained later). 
-You are free to support it by yourself and contribute it to the project.
+You are free to support it by yourself and contribute it to this project.
 
 
 
