@@ -5,8 +5,8 @@ It includes:
 - development tools to lively program, explore and debug remote boards ([TelePharo](https://github.com/dionisiydk/TelePharo))
 - board modeling library which simplifies board configuration
 
-    - Raspberry, driven by [WiringPi library](http://wiringpi.com)
-    - Arduino, driven by [Firmata](https://github.com/firmata/arduino), soon
+    - Raspberry driven by [WiringPi library](http://wiringpi.com)
+    - Arduino driven by [Firmata](https://github.com/firmata/arduino), soon
     - Beaglebone, soon
 
 ## Installation on Raspberry
