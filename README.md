@@ -18,18 +18,19 @@ Metacello new
   repository: 'github://pharo-iot/PharoThings/src';
   load: #(RemoteDevServer Raspberry).
 ```
-Save image.
+At the end save the image.
 
-2) Download ArmVM to run image on your board: http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip.
+2) Download ArmVM to run Pharo on your board: http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip.
 
-3) Copy saved image, changes, sources and ArmVM files into your Raspberry.
-4) Start Pharo on Raspberry it with running server:
+3) Copy saved image, changes, sources and ArmVM files into your Raspberry (files should be in same directory)
+
+4) Start Pharo on Raspberry with server option:
 ```bash
 pharo --headless Server.image  remotePharo --startServerOnPort=40423
 ```
 It will listen remote IDE connections on port 40423.
 
-You can also prepare image with running server. Evaluate following code and save the image:
+You can also prepare image with running server. Evaluate following code in playground and save the image:
 ```Smalltalk
 TlpRemoteUIManager registerOnPort: 40423
 ```
