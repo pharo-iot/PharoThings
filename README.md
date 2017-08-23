@@ -47,13 +47,13 @@ Metacello new
   repository: 'github://pharo-iot/PharoThings/src';
   load: 'RemoteDev'
 ```
-Connect to running Raspberry image from playground:
+Connect to remote Pharo running on Raspberry from playground:
 ```Smalltalk
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
 ```
-Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection.
+Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection. In this example we used port 40423 to run server on Raspberry.
 
-Then inspect the board:
+Now inspect the board:
 ```Smalltalk
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect
