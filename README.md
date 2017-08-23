@@ -22,15 +22,21 @@ Save image.
 
 2) Download ArmVM to run image on your board: http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip.
 
-3) Copy saved image and ArmVM to your board and run it:
+3) Copy saved image, changes, sources and ArmVM files into your Raspberry.
+4) Start Pharo on Raspberry it with running server:
 ```bash
 pharo --headless Server.image  remotePharo --startServerOnPort=40423
 ```
-You can also save image with running server:
+It will listen remote IDE connections on port 40423.
+
+You can also prepare image with running server. Evaluate following code and save the image:
 ```Smalltalk
 TlpRemoteUIManager registerOnPort: 40423
 ```
-In that case command line option --startServerOnPort is not needed.
+In that case command line option --startServerOnPort is not needed. Just start Pharo with --no-quit option:
+```bash
+pharo --headless Server.image  --no-quit
+```
 
 ## Connecting to board
 Install client part of PharoThings to your Pharo image:
@@ -44,14 +50,16 @@ Connect to running Raspberry image from playground:
 ```Smalltalk
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
 ```
-Then inspect board:
+Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection.
+
+Then inspect the board:
 ```Smalltalk
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect
 ```
 ![](doc/images/RaspBoardInspector.png)
 
-Evaluation pane in bottom provides bindings to gpio pins which you can script by doIt/printIt expressions.
+Evaluation pane in the bottom provides bindings to gpio pins which you can script by doIt/printIt expressions.
 
 Currently only model B is implemented (with revision 1 and 2). But this code will not break on other boards. In that case pins will point to wrong phisical pins of your board. But tool will show working UI. And you will be able to control board by low level library (like WiringPi) using remote playground:
 ```Smalltalk
