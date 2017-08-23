@@ -51,7 +51,7 @@ Connect to remote Pharo running on Raspberry from playground:
 ```Smalltalk
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
 ```
-Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection. In this example we used port 40423 to run server on Raspberry.
+Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection. In this example we used port 40423.
 
 Now inspect the board:
 ```Smalltalk
@@ -60,6 +60,13 @@ remoteBoard inspect
 ```
 ![](doc/images/RaspBoardInspector.png)
 
+As you can see the board inspector provides scheme of pins similar to Raspberry Pi docs.
+But here it is a live tool which represents current pins state (only configured pins are shown).
+@TODO
+
+By default you will not see real pin values because pins should be configured for this.
+
+it shows no values because only configured pins are able to do something.
 Evaluation pane in the bottom provides bindings to gpio pins which you can script by doIt/printIt expressions.
 
 Currently only model B is implemented (with revision 1 and 2). But this code will not break on other boards. In that case pins will point to wrong phisical pins of your board. But tool will show working UI. And you will be able to control board by low level library (like WiringPi) using remote playground:
