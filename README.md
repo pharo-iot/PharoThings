@@ -64,7 +64,9 @@ Using remotePharo instance you can open many different tools to develop and expl
 Here we are using specialized Raspberry tools.
 
 ## Inspecting the board
-To inspect the board you need to know concrete model of Raspberry. Currently only model B is supported (with revision 1 and 2). But you can play with following code on other boards too to get feeling of this project. In that case pins could point to wrong phisical pins of your board. But tools will not break and will show the same working UI. Also you are always able to work with board by low level library (like WiringPi) using powerfull remote tool from [TelePharo](https://github.com/dionisiydk/TelePharo):
+To inspect the board you need to know concrete model of Raspberry. Currently only model B is supported (with revision 1 and 2). But you can play with following code on other boards too to get feeling of this project. In that case pins could point to wrong phisical pins of your board. But tools will not break and will show the same working UI. Also you are always able to work with board by low level library (like WiringPi) using powerfull remote tool from [TelePharo](https://github.com/dionisiydk/TelePharo).
+
+By the way implementation of specific Raspberry model is very simple task (will be explained later). Feel free to support it and contribute to the project. 
 
 So with choosen board subclass evaluate following code to open inspector:
 ```Smalltalk
@@ -112,17 +114,4 @@ led value.
 button value
 ```
 
-
 @TODO
-
-Currently only model B is implemented (with revision 1 and 2). But this code will not break on other boards. In that case pins will point to wrong phisical pins of your board. But tool will show working UI. And you will be able to control board by low level library (like WiringPi) using remote playground:
-```Smalltalk
-remoteBoard openPlayground
-```
-![](doc/images/RaspRemotePlayground.png)
-
-By the way modeling specific board is very simple task (will be explained later). 
-You are free to support it by yourself and contribute it to this project.
-
-
-
