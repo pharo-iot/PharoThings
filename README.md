@@ -66,25 +66,30 @@ remoteBoard inspect
 ```
 ![](doc/images/RaspBoardInspector.png)
 
-As you can see the board inspector provides scheme of pins similar to Raspberry Pi docs.
-But here it is a live tool which represents current pins state. In picture you see configuration of board with button (gpio6) and led (gpio1).
-Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. But more interesting that icons are updated according to pin value changes. If you will click on physical button on your board the inspector will show you updated pin state (icon color will change).
+The board inspector provides scheme of pins similar to Raspberry Pi docs.
+But here it is a live tool which represents current pins state. 
 
-The evaluation pane in the bottom of inspector provides bindings to gpio pins which you can script by #doIt operations. In example expressions were used to configure button and led.
+In picture there is configuration of board with button (gpio3) and led (gpio1).
+Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. But more interesting that icons are updated according to pin value changes. If you click on physical button on your board the inspector shows updated pin state (icon color is changed).
 
-For led we first introduce named variable #led which we assign to gpio1 pin:
+The evaluation pane in the bottom provides bindings to gpio pins which you can script by #doIt/printIt commands. Example shows expressions which were used to configure button and led.
+
+For led we first introduced named variable #led which we assigned to gpio1 pin:
 ```Smalltalk
 led := gpio1
 ```
-Then we configure pin to be in digital output mode and set the value:
+Then we configured pin to be in digital output mode and set the value:
 ```
 led beDigitalOutput.
 led value: 1
 ```
-You can notice now that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. The pins are real object with behaviour. For example to switch digital value you can jast ask pin to toggle it:
+It turned the led on.
+
+You can notice that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. They are real objects with behaviour. For example to switch digital value you can just ask pin to toggle it:
 ```
 led toggleDigitalValue
 ```
+
 
 @TODO
 
