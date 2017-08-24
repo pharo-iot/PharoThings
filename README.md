@@ -44,7 +44,7 @@ pharo --headless Server.image  --no-quit
 ```
 
 ## Connecting to board
-Install client part of PharoThings to your Pharo image:
+Install client part of PharoThings to development (client) Pharo image:
 ```Smalltalk
 Metacello new
   baseline: 'PharoThings';
