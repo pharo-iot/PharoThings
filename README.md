@@ -75,7 +75,7 @@ Digital pins are shown with green/red icons which represent high/low (1/0) value
 
 The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands. Example shows expressions which were used to configure button and led.
 
-For led we first introduced named variable #led which we assigned to gpio1 pin:
+For led we first introduced named variable #led which we assigned to gpio1 pin instance:
 ```Smalltalk
 led := gpio1
 ```
