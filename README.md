@@ -59,7 +59,7 @@ remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 4
 ```
 Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection. In this example we used port 40423.
 
-With remotePharo instance you can do many things with your remote image. Look at [TelePharo](https://github.com/dionisiydk/TelePharo) for details. Here we are using specialized Raspberry tools.
+With remotePharo instance you can do many things with remote Raspberry image. Look at [TelePharo](https://github.com/dionisiydk/TelePharo) for details. Here specialized Raspberry tools are shown.
 
 ## Inspecting the board
 To inspect the board you need to know concrete model of Raspberry. Currently only model B is supported (with revision 1 and 2). But you can play with following code on other boards too to get feeling of this project. In that case pins will point to wrong phisical pins of your board. But tools will not break and will show the same working UI. Also you are always able to work with board by low level library (like WiringPi) using powerfull remote tool from [TelePharo](https://github.com/dionisiydk/TelePharo):
