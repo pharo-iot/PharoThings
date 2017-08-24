@@ -71,9 +71,10 @@ So with choosen board subclass evaluate following code to open inspector:
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect
 ```
-![](doc/images/RaspBoardInspector.png)
 
 ## The board inspector
+
+![](doc/images/RaspBoardInspector.png)
 
 The board inspector provides scheme of pins similar to Raspberry Pi docs.
 But here it is a live tool which represents current pins state. 
