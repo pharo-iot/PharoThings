@@ -11,6 +11,10 @@ It includes:
 
 ## Installation on Raspberry
 
+0) Preconditions
+
+PharoThings uses WiringPi library to control Raspberry pins. You need to install it in your board. There is convenient prebuilt package [here](https://github.com/hamishcunningham/wiringpi/tree/master/package/2.13/unstable). Follow [install](https://github.com/hamishcunningham/wiringpi/blob/master/INSTALL) instructions or do it your own way.
+
 1) Download Pharo 6 and install server part of PharoThings:
 ```Smalltalk
 Metacello new
