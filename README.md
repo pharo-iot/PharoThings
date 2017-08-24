@@ -68,11 +68,13 @@ To inspect the board you need to know concrete model of Raspberry. Currently onl
 
 By the way implementation of specific Raspberry model is very simple task (will be explained later). Feel free to support it and contribute to the project. 
 
-So with choosen board subclass evaluate following code to open inspector:
+So for your board model you need to choose appropriate board class. For Raspberry it will be one of the RpiBoard subclasses.
+With choosen class evaluate following code to open inspector:
 ```Smalltalk
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect
 ```
+In this case we work with Raspberry model B revision 1.
 
 ## The board inspector
 
