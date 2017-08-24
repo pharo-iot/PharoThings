@@ -69,7 +69,7 @@ remoteBoard inspect
 The board inspector provides scheme of pins similar to Raspberry Pi docs.
 But here it is a live tool which represents current pins state. 
 
-In picture the board is shown with two configured pins: gpio3 and gpio1 which connect physical button and led accordingly.
+In picture the board is shown with two configured pins: gpio3 and gpio1 which are connected to physical button and led accordingly.
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. Icons are updated according to pin value changes. If you click on physical button on your board the inspector will show updated pin state by changing icon color.
 
