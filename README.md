@@ -65,13 +65,26 @@ remoteBoard inspect
 ![](doc/images/RaspBoardInspector.png)
 
 As you can see the board inspector provides scheme of pins similar to Raspberry Pi docs.
-But here it is a live tool which represents current pins state (only configured pins are shown).
+But here it is a live tool which represents current pins state. In picture you see configuration of board with button (gpio6) and led (gpio1).
+Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. But more interesting that icons are updated according to pin value changes. If you will click on physical button on your board the inspector will show you updated pin state (icon color will change).
+
+The evaluation pane in the bottom of inspector provides bindings to gpio pins which you can script by #doIt operations. In example expressions were used to configure button and led.
+
+For led we first introduce named variable #led which we assign to gpio1 pin:
+```Smalltalk
+led := gpio1
+```
+Then we configure pin to be in digital output mode and set the value:
+```
+led beDigitalOutput.
+led value: 1
+```
+You can notice now that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. The pins are real object with behaviour. For example to switch digital value you can jast ask pin to toggle it:
+```
+led toggleDigitalValue
+```
+
 @TODO
-
-By default you will not see real pin values because pins should be configured for this.
-
-it shows no values because only configured pins are able to do something.
-Evaluation pane in the bottom provides bindings to gpio pins which you can script by doIt/printIt expressions.
 
 Currently only model B is implemented (with revision 1 and 2). But this code will not break on other boards. In that case pins will point to wrong phisical pins of your board. But tool will show working UI. And you will be able to control board by low level library (like WiringPi) using remote playground:
 ```Smalltalk
