@@ -96,7 +96,7 @@ led value: 1
 ```
 It turned the led on.
 
-For button we did the same but with digital in mode and extra resistor configuration:
+For button we did the same but with digital input mode and extra resistor configuration:
 ```Smalltalk
 button := gpio3.
 button beDigitalInput. "button"
