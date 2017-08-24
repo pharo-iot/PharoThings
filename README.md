@@ -92,15 +92,14 @@ button := gpio3.
 button beDigitalInput. "button"
 button enablePullDownResister.
 ```
-You can check current value of pin using #value message:
+You can notice that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle value:
+```
+led toggleDigitalValue
+```
+Or ask pins for current value if you want to check it:
 ```Smalltalk
 led value.
 button value
-```
-
-You can notice that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. They are real objects with behaviour. For example to switch digital value you can just ask pin to toggle it:
-```
-led toggleDigitalValue
 ```
 
 
