@@ -92,11 +92,11 @@ button := gpio3.
 button beDigitalInput. "button"
 button enablePullDownResister.
 ```
-You can notice that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle value:
+You can notice that gpio variables are not just numbers/ids. PharoThings models board with first class pins. They are real objects with behaviour. For example you can ask pin to toggle value:
 ```
 led toggleDigitalValue
 ```
-Or ask pins for current value if you want to check it:
+Or ask pin for current value if you want to check it:
 ```Smalltalk
 led value.
 button value
