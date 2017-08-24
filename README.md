@@ -69,10 +69,11 @@ remoteBoard inspect
 The board inspector provides scheme of pins similar to Raspberry Pi docs.
 But here it is a live tool which represents current pins state. 
 
-In picture there is configuration of board with button (gpio3) and led (gpio1).
-Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. But more interesting that icons are updated according to pin value changes. If you click on physical button on your board the inspector shows updated pin state (icon color is changed).
+In picture the board is shown with two configured pins: gpio3 and gpio1 which connect physical button and led accordingly.
 
-The evaluation pane in the bottom provides bindings to gpio pins which you can script by #doIt/printIt commands. Example shows expressions which were used to configure button and led.
+Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. Icons are updated according to pin value changes. If you click on physical button on your board the inspector shows updated pin state (icon color is changed).
+
+The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands. Example shows expressions which were used to configure button and led.
 
 For led we first introduced named variable #led which we assigned to gpio1 pin:
 ```Smalltalk
@@ -84,6 +85,18 @@ led beDigitalOutput.
 led value: 1
 ```
 It turned the led on.
+
+For button we did the same but with digital in mode and extra resistor configuration:
+```Smalltalk
+button := gpio3.
+button beDigitalInput. "button"
+button enablePullDownResister.
+```
+You can check current value of pin using #value message:
+```Smalltalk
+led value.
+button value
+```
 
 You can notice that gpio variables are not numbers which points to pins. PharoThings models boards with first class pins. They are real objects with behaviour. For example to switch digital value you can just ask pin to toggle it:
 ```
