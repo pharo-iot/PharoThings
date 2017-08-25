@@ -150,7 +150,7 @@ Board inspector provides extra tab to manage installed devices:
 
 This tab shows live state of devices. You can click on output pins to modify value.
 
-From context menu you can disable and remove devices. Also you can browse implementation.
+From context menu you can disable and remove devices. And you can also browse implementation.
 
 Following demo shows devices in live:
 
