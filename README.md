@@ -59,7 +59,7 @@ remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 4
 ```
 Notice that you should know IP address of your Raspberry and port where running Pharo is waiting for remote IDE connection. In this example we used port 40423.
 
-Using remotePharo instance you can open many different tools to develop and explore remote Pharo image. It is part of [TelePharo project](https://github.com/dionisiydk/TelePharo). Look at it for details. 
+With remotePharo instance you can open many different tools to develop and explore remote Pharo image. It is part of [TelePharo project](https://github.com/dionisiydk/TelePharo). Look at it for details. 
 
 Here we are using specialized Raspberry tools.
 
