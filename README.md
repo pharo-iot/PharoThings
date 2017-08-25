@@ -156,7 +156,7 @@ Following demo shows devices in live:
 
 ## Implementing new devices
 
-This topic will be described in details. Now look at following demo as a simple example how develop and debug the live Raspberry remotelly:
+This topic will be described in details later. Now look at following demo as a simple example how develop and debug the live Raspberry remotelly:
 
 [![](https://img.youtube.com/vi/5i0tsgFtlOg/0.jpg)](https://www.youtube.com/watch?v=5i0tsgFtlOg)
 
