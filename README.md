@@ -53,7 +53,7 @@ Metacello new
   repository: 'github://pharo-iot/PharoThings/src';
   load: 'RemoteDev'
 ```
-Connect to remote Pharo running on Raspberry from playground:
+Connect to remote Pharo running on Raspberry using playground:
 ```Smalltalk
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
 ```
