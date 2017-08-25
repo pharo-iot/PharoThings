@@ -127,7 +127,7 @@ button when: PotButtonReleased send: #toggleDigitalValue to: led.
 ```
 It will connect physical button to the led as a switch device which turns the led on and off on button click. 
 
-Also devices incapsulate pin configuration logic. And in case of button you do not need configure input pin in advance. Just install device and pin will work. 
+Devices incapsulate pin configuration logic. In case of button you do not need configure input pin in advance. Just install device and pin will work. 
 
 Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later but this logic is hidden by PotButton class and users do not need to thing about it.
 
