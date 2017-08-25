@@ -180,4 +180,4 @@ It will turn the led on when the button is pressed.
 
 Now if you save the image this process will continue working after Pharo restart. And the button on your board will turn the led on every time you press the button.
 
-Demos above show persistence in live.
+All videos above show persistence in live.
