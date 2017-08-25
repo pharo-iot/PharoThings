@@ -9,6 +9,8 @@ It includes:
     - Arduino driven by [Firmata](https://github.com/firmata/arduino), soon
     - Beaglebone, soon
 
+Now PharoThings is in the beta stage together with documentation and videos. It will be improved constantly.
+
 ## Installation on Raspberry
 
 1) Download Pharo 6 and install server part of PharoThings:
