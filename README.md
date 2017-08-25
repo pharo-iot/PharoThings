@@ -2,7 +2,7 @@
 
 Live programming platform for IoT projects based on [Pharo](http://pharo.org).
 It includes:
-- development tools to lively program, explore and debug remote boards ([TelePharo](https://github.com/dionisiydk/TelePharo))
+- development tools to lively program, explore and debug remote boards (based on [TelePharo](https://github.com/dionisiydk/TelePharo))
 - board modeling library which simplifies board configuration
 
     - Raspberry driven by [WiringPi library](http://wiringpi.com)
