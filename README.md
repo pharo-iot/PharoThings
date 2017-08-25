@@ -136,7 +136,7 @@ Now to toggle led we still use script inside inspector. We can replace it with a
 button unsubscribe: led. "disable previous script behaviour"
 board installDevice: (PotSwitch named: 'led switch' for: gpio4 using: button).
 ```
-(first line is required because instead toggle will be performed twice which hide state change)
+(first line is required because instead toggle will be performed twice which will not change anything)
 
 Board inspector provides extra tab to manage installed devices:
 ![](doc/images/RaspBoardDevicesInspector.png)
