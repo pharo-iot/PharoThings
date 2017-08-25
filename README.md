@@ -122,7 +122,7 @@ PharoThings provides simple high level model of devices which you can use to imp
 
 For example with button device you can subscribe on #press/release events:
 ```Smalltalk
-button := board installDevice: (PotButton named: 'button green' fromPowerTo: gpio3).
+button := board installDevice: (PotButton named: 'button' fromPowerTo: gpio3).
 button when: PotButtonReleased send: #toggleDigitalValue to: led.
 ```
 It will connect physical button to the led as a switch device which turns the led on and off on button click. 
@@ -134,7 +134,7 @@ Notice that in example the physical button is connected to the gpio pin from the
 Now to toggle led we still use script inside inspector. We can replace it with another device PotSwitch:
 ```Smalltalk
 button unsubscribe: led. "disable previous script behaviour"
-board installDevice: (PotSwitch named: 'green switch' for: gpio4 using: button).
+board installDevice: (PotSwitch named: 'led switch' for: gpio4 using: button).
 ```
 (first line is required because instead toggle will be performed twice which hide state change)
 
