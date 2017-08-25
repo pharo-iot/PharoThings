@@ -142,9 +142,9 @@ Board inspector provides extra tab to manage installed devices:
 
 ![](doc/images/RaspBoardDevicesInspector.png)
 
-This tool also shows live state of devices. And you are able to click on output pins to modify value.
+This tab shows live state of devices. You can click on output pins to modify value.
 
-From context menu you can disable and remove devices and browse implementation.
+From context menu you can disable and remove devices. Also you can browse implementation.
 
 ## Persist board changes
 When board is configured you can save the remote image to persist board changes. When you restart the image the board state will be restored: pins will restore saved state, installed devices will continue working:
