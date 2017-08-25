@@ -26,7 +26,7 @@ At the end save the image.
 
 4) Install [WiringPi library](http://wiringpi.com) in Raspberry
 
-If you use the latest desktop version of Raspbian version just skip this step because WiringPi is included. But light Raspbian image is required manual installation.
+If you use the latest desktop version of Raspbian skip this step (WiringPi is included). Light Raspbian version is required manual installation of WiringPi.
 
 PharoThings uses WiringPi to control Raspberry pins. You need install it in your board. There is convenient prebuilt package [here](https://github.com/hamishcunningham/wiringpi/tree/master/package/2.13/unstable). Follow [install](https://github.com/hamishcunningham/wiringpi/blob/master/INSTALL) instructions or do it your own way.
 
