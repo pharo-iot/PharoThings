@@ -129,13 +129,6 @@ It will connect physical button to the led as a switch device which turns the le
 
 Also devices incapsulate pin configuration logic. And in case of button you do not need configure input pin in advance. Just install device and pin will work. 
 
-Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later.
-
-There is difference how button pin should be configured in case when it is connected from the power or from the ground. And this difference are incapsulated in the PotButton class and users can not think about it.
-
-
-. But you can also connect it from the ground. 
-
-the way how the button is plugged into the board affects the initial (released) value of button pin.  
+Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later but this logic is hidden by PotButton class and users do not need to thing about it.
 
 @TODO
