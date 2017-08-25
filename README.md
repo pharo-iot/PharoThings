@@ -147,18 +147,22 @@ This tab shows live state of devices. You can click on output pins to modify val
 From context menu you can disable and remove devices. Also you can browse implementation.
 
 ## Persist board changes
-When board is configured you can save the remote image to persist board changes. When you restart the image the board state will be restored: pins will restore saved state, installed devices will continue working:
+If board is configured you can save the remote image to persist board changes:
 ```Smalltalk
 remotePharo saveImage
 ```
-For example try save the board with led on. Then turn the led of and restart the Pharo on Raspberry. When Pharo will start the led will be on (because the image was saved in that state).
+When you restart the image board pins will restore saved state and installed devices will continue working.
 
-Together with board state all running processes are also persistent. For example from inspector you can connect button pin to the led with the process with simple loop:
+For example try save the board with led on. Then turn the led of and restart the Pharo. When Pharo will start the led will be on (because the image was saved in that state).
+
+All processes running in Pharo are also persistent. For example from inspector you can connect button pin to the led with simple process:
 ```Smalltalk
 [ [100 milliSeconds wait. 
 	led value: (button value=1) asBit
 		] repeat	
 	 ] forkNamed: 'button process'.
 ```
-It will turn the led on when the button is pressed. Now image save will persist this logic. When Pharo will start the button on your board will turn the led on.
+It will turn the led on when the button is pressed. 
+
+Now if you save the image this process will continue working after Pharo restart. And the button on your board will turn the led on every time you press the button.
 
