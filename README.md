@@ -20,7 +20,7 @@ Metacello new
 ```
 At the end save the image.
 
-2) Download ArmVM to run Pharo on your board: http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip.
+2) Download ArmVM http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip. It will run Pharo on your board
 
 3) Copy saved image, changes, sources and ArmVM files into your Raspberry (files should be in same directory)
 
