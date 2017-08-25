@@ -139,6 +139,7 @@ board installDevice: (PotSwitch named: 'led switch' for: gpio4 using: button).
 (first line is required because instead toggle will be performed twice which will not change anything)
 
 Board inspector provides extra tab to manage installed devices:
+
 ![](doc/images/RaspBoardDevicesInspector.png)
 
 This tool also shows live state of devices. And you are able to click on output pins to modify value.
