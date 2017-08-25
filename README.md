@@ -178,6 +178,6 @@ All processes running in Pharo are also persistent. For example from inspector y
 ```
 It will turn the led on when the button is pressed. 
 
-Now if you save the image this process will continue working after Pharo restart. And the button on your board will turn the led on every time you press the button.
+Now if you save the image this process will continue working after Pharo restart.
 
 All videos above show persistence in live.
