@@ -143,6 +143,21 @@ Board inspector provides extra tab to manage installed devices:
 
 This tool also shows live state of devices. And you are able to click on output pins to modify value.
 
-From context menu you can disable and remove devices and browse their implementation.
+From context menu you can disable and remove devices and browse implementation.
 
-@TODO
+## Persist board changes
+When board is configured you can save the remote image to persist board changes. When you restart the image the board state will be restored: pins will restore saved state, installed devices will continue working:
+```Smalltalk
+remotePharo saveImage
+```
+For example try save the board with led on. Then turn the led of and restart the Pharo on Raspberry. When Pharo will start the led will be on (because the image was saved in that state).
+
+Together with board state all running processes are also persistent. For example from inspector you can connect button pin to the led with the process with simple loop:
+```Smalltalk
+[ [100 milliSeconds wait. 
+	led value: (button value=1) asBit
+		] repeat	
+	 ] forkNamed: 'button process'.
+```
+It will turn the led on when the button is pressed. Now image save will persist this logic. When Pharo will start the button on your board will turn the led on.
+
