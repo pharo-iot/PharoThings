@@ -115,6 +115,10 @@ Or ask pin for current value if you want to check it:
 led value.
 button value
 ```
+Following demo shows inspector in live:
+
+[![](https://img.youtube.com/vi/0H9of7PQet0/0.jpg)](https://www.youtube.com/watch?v=0H9of7PQet0)
+
 ## The device model
 Pin scripting is cool and powerful feature but when you need real logic for your pins it is better to put it in objects.
 
@@ -146,6 +150,16 @@ This tab shows live state of devices. You can click on output pins to modify val
 
 From context menu you can disable and remove devices. Also you can browse implementation.
 
+Following demo shows devices in live:
+
+[![](https://img.youtube.com/vi/ezfjditHjq4/0.jpg)](https://www.youtube.com/watch?v=ezfjditHjq4)
+
+## Implementing new devices
+
+This topic will be described in details. Now look at following demo as a simple example how develop and debug the live remote Raspberry:
+
+[![](https://img.youtube.com/vi/5i0tsgFtlOg/0.jpg)](https://www.youtube.com/watch?v=5i0tsgFtlOg)
+
 ## Persist board changes
 If board is configured you can save the remote image to persist board changes:
 ```Smalltalk
@@ -166,3 +180,4 @@ It will turn the led on when the button is pressed.
 
 Now if you save the image this process will continue working after Pharo restart. And the button on your board will turn the led on every time you press the button.
 
+Demos above show persistence in live.
