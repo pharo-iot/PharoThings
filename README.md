@@ -129,7 +129,7 @@ It will connect physical button to the led as a switch device which turns the le
 
 Devices incapsulate pin configuration logic. You don't need configure input pin manually when you create button instance. Just install device and pin will work. 
 
-Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later but this logic is hidden by PotButton class and users do not need to thing about it.
+Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later but this logic is hidden by PotButton class and users do not need to think about it.
 
 Now to toggle led we still use script inside inspector. We can replace it with another device PotSwitch:
 ```Smalltalk
