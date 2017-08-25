@@ -83,15 +83,15 @@ In this case we work with Raspberry model B revision 1.
 The board inspector provides scheme of pins similar to Raspberry Pi docs.
 But here it is a live tool which represents current pins state. 
 
-In picture the board is shown with two configured pins: gpio3 and gpio1 which are connected to physical button and led accordingly.
+In picture the board is shown with two configured pins: gpio3 and gpio4 which are connected to physical button and led accordingly.
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on icon to toggle the value. Icons are updated according to pin value changes. If you click on physical button on your board the inspector will show updated pin state by changing icon color.
 
 The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands. Example shows expressions which were used to configure button and led.
 
-For led we first introduced named variable #led which we assigned to gpio1 pin instance:
+For led we first introduced named variable #led which we assigned to gpio4 pin instance:
 ```Smalltalk
-led := gpio1
+led := gpio4
 ```
 Then we configured pin to be in digital output mode and set the value:
 ```
@@ -130,5 +130,19 @@ It will connect physical button to the led as a switch device which turns the le
 Devices incapsulate pin configuration logic. In case of button you do not need configure input pin in advance. Just install device and pin will work. 
 
 Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later but this logic is hidden by PotButton class and users do not need to thing about it.
+
+Now to toggle led we still use script inside inspector. We can replace it with another device PotSwitch:
+```Smalltalk
+button unsubscribe: led. "disable previous script behaviour"
+board installDevice: (PotSwitch named: 'green switch' for: gpio4 using: button).
+```
+(first line is required because instead toggle will be performed twice which hide state change)
+
+Board inspector provides extra tab to manage installed devices:
+![](doc/images/RaspBoardDevicesInspector.png)
+
+This tool also shows live state of devices. And you are able to click on output pins to modify value.
+
+From context menu you can disable and remove devices and browse their implementation.
 
 @TODO
