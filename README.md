@@ -116,16 +116,26 @@ led value.
 button value
 ```
 ## The device model
-Playing with scripts is cool and powerful feature but when you need real logic for your pins it is better to model it with objects.
-PharoThings provides simple high level model of devices which you can use to model interaction with your board.
+Pin scripting is cool and powerful feature but when you need real logic for your pins it is better to put it in objects.
 
-For example you can define the button device and switch the led value when button is released:
+PharoThings provides simple high level model of devices which you can use to implement complex interaction with your board.
+
+For example with button device you can subscribe on #press/release events:
 ```Smalltalk
 button := board installDevice: (PotButton named: 'button green' fromPowerTo: gpio3).
 button when: PotButtonReleased send: #toggleDigitalValue to: led.
 ```
-Now the physical button will turn on and off the led.
+It will connect physical button to the led as a switch device which turns the led on and off on button click. 
 
-Devices incapsulate pin configuration logic. So you do not need to configure button pin in advance. Just install button device and pin will work.
+Also devices incapsulate pin configuration logic. And in case of button you do not need configure input pin in advance. Just install device and pin will work. 
+
+Notice that in example the physical button is connected to the gpio pin from the power. That is why we use "named:fromPowerTo:" selector when we create button instance. But button can be connected another way too. And in that case we would use selector #named:fromGroundTo:. It is important to create instance in the same way as it is connected in the real world because otherwise button will not work. The reason will be explained later.
+
+There is difference how button pin should be configured in case when it is connected from the power or from the ground. And this difference are incapsulated in the PotButton class and users can not think about it.
+
+
+. But you can also connect it from the ground. 
+
+the way how the button is plugged into the board affects the initial (released) value of button pin.  
 
 @TODO
