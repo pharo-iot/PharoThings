@@ -115,5 +115,17 @@ Or ask pin for current value if you want to check it:
 led value.
 button value
 ```
+## The device model
+Playing with scripts is cool and powerful feature but when you need real logic for your pins it is better to model it with objects.
+PharoThings provides simple high level model of devices which you can use to model interaction with your board.
+
+For example you can define the button device and switch the led value when button is released:
+```Smalltalk
+button := board installDevice: (PotButton named: 'button green' fromPowerTo: gpio3).
+button when: PotButtonReleased send: #toggleDigitalValue to: led.
+```
+Now the physical button will turn on and off the led.
+
+Devices incapsulate pin configuration logic. So you do not need to configure button pin in advance. Just install button device and pin will work.
 
 @TODO
