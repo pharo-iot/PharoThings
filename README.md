@@ -63,7 +63,10 @@ Notice that you should know the IP address of your Raspberry and port where runn
 
 With the remotePharo instance you can open many different tools to develop and explore remote Pharo images. It is part of [TelePharo project](https://github.com/dionisiydk/TelePharo). Look at it for details. 
 
-Here we are using specialized Raspberry tools.
+Here we are using specialized Raspberry tools. They require auto refresh feature of inspector which is not enabled by default in Pharo 6. To activate it evaluate:
+```Smalltalk
+GTInspector enableStepRefresh
+```
 
 ## Inspecting the board
 To inspect the board you need to know the concrete model of your Raspberry. Currently only model B is supported (with revision 1 and 2). But you can play with the following code on other boards too to get a feeling of this project. In that case pins could point to the wrong physical pins of your board. But tools will not break and will show the same working UI. Also you are always able to work with a board by using the low level library (like WiringPi) using the powerfull remote tools from [TelePharo](https://github.com/dionisiydk/TelePharo).
