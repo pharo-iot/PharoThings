@@ -20,6 +20,10 @@ Metacello new
   repository: 'github://pharo-iot/PharoThings/src';
   load: #(RemoteDevServer Raspberry).
 ```
+Then configure image to disable slow browser plugins (instead remote browser will be much slower):
+```Smalltalk
+ClySystemEnvironmentPlugin disableSlowPlugins
+```
 At the end save the image.
 
 2) Download ArmVM http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip. It will run Pharo on your board
