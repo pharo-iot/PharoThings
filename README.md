@@ -1,4 +1,5 @@
 # PharoThings
+[![Build Status](https://travis-ci.org/pharo-iot/PharoThings.svg?branch=master)](https://travis-ci.org/pharo-iot/PharoThings)
 
 Live programming platform for IoT projects based on [Pharo](http://pharo.org).
 It includes:
