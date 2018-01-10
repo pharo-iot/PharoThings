@@ -13,8 +13,8 @@ SmalltalkCISpec {
         'BaselineOfObjectTravel', 
         'BaselineOfBasys' , 
         'BaselineOfSeemless', 
-        'BaselineOfCalypso',
-        'BaselineOfPharoThings' ]
+        'BaselineOfCalypso'
+      ]
     }
   }
 }
