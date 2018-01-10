@@ -1,6 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
+      #directory : 'src',
       #baseline : 'PharoThings',
       #platforms : [ #pharo ]
     }
@@ -13,7 +14,8 @@ SmalltalkCISpec {
         'BaselineOfObjectTravel', 
         'BaselineOfBasys' , 
         'BaselineOfSeemless', 
-        'BaselineOfCalypso'
+        'BaselineOfCalypso',
+        'BaselineOfPharoThings'
       ]
     }
   }
