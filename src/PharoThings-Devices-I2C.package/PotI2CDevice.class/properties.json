@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-I2C",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"i2cConnection",
+		"i2cAddress"
+	],
+	"name" : "PotI2CDevice",
+	"type" : "normal"
+}
