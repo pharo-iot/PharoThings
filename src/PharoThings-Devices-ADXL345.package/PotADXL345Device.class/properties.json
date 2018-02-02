@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotI2CDevice",
+	"category" : "PharoThings-Devices-ADXL345",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotADXL345Device",
+	"type" : "normal"
+}
