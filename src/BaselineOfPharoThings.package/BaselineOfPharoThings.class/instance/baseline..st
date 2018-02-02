@@ -21,7 +21,13 @@ baseline: spec
 				spec requires: #('PharoThings-Hardware-Core' ). ];
 			package: 'PharoThings-Hardware-Core';
 			package: 'PharoThings-Hardware-Core-Tests' with: [
-				spec requires: #('PharoThings-Hardware-Core' 'Mocketry' ). ];
+				spec requires: #('PharoThings-Hardware-Core' 'Mocketry' )];
+				
+			package: #'PharoThings-Devices-I2C' with: [
+				spec requires: #('PharoThings-Hardware-Core' ) ];
+				
+			package: #'PharoThings-Devices-ADXL345' with: [
+				spec requires: #('PharoThings-Devices-I2C' ) ]	;
 			
 			baseline: 'WiringPi' with: [
 				spec 
@@ -40,7 +46,7 @@ baseline: spec
 			package: #'PharoThings-RemoteToolsClient' with: [
 				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient'). ].
 		spec 
-			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-Button' #'PharoThings-Devices-Switch' );
+			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-Button' #'PharoThings-Devices-Switch' #'PharoThings-Devices-I2C' #'PharoThings-Devices-ADXL345');
 			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
 			group: 'Arduino' with: #('Hardware' #'PharoThings-Hardware-Arduino' );
 			
@@ -48,4 +54,4 @@ baseline: spec
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );
-			group: 'default' with: #('LocalDev')].
+			group: 'default' with: #('LocalDev') ].
