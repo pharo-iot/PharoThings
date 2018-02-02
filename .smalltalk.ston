@@ -1,0 +1,22 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #directory : 'src',
+      #baseline : 'PharoThings',
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #include : {
+      #projects : [ 
+        'BaselineOfTostSerializer', 
+        'BaselineOfReadWriteLock', 
+        'BaselineOfObjectTravel', 
+        'BaselineOfBasys' , 
+        'BaselineOfSeemless', 
+        'BaselineOfCalypso',
+        'BaselineOfPharoThings'
+      ]
+    }
+  }
+}

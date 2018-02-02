@@ -1,0 +1,10 @@
+language: smalltalk
+sudo: false
+os:
+  - linux
+smalltalk_edge:
+  source: hpi-swa/smalltalkCI
+  branch: dev
+smalltalk:
+  - Pharo-6.0
+  - Pharo-7.0
