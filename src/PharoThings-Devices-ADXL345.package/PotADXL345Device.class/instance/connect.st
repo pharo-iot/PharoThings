@@ -1,5 +1,7 @@
 controlling
 connect
+	"The code is copied from C:
+	https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html"
 	super connect.
 	
 	i2cConnection write8BitsAt: 16r31 data: 16r0b.

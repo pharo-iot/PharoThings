@@ -1,6 +1,7 @@
 controlling
 readCoordinates
-	
+	"The code is copied from C:
+	https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html"
 	| x0 x1 y0 y1 z0 z1 acc_x acc_y acc_z |
 	x0 := 16rff - (i2cConnection read8BitsAt: 16r32).
 	x1 := 16rff - (i2cConnection read8BitsAt: 16r33).

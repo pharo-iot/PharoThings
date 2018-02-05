@@ -8,7 +8,15 @@ Subclasses should extend #connect method with appropriate logic for device regis
 
 My instances should be created using physical address of device: 
 
-	PotI2CDevice on: 16r54.
+	PotI2CDevice on: 16r53.
+
+Or they should define default address on class side: 
+
+- defaultI2CAddress
+
+Then instance can be created using simple #new.
+
+	PotI2CDevice new.
 
 Internal Representation and Key Implementation Points.
 

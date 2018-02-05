@@ -1,5 +1,5 @@
 instance creation
 on: addressInt
 
-	^self new 
+	^super new 
 		i2cAddress: addressInt
