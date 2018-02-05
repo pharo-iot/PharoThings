@@ -1,0 +1,3 @@
+instance creation
+defaultI2CAddress
+	self subclassResponsibility

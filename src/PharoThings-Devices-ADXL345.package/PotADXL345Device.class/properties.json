@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 2/5/2018 14:27",
 	"super" : "PotI2CDevice",
 	"category" : "PharoThings-Devices-ADXL345",
 	"classinstvars" : [ ],
