@@ -14,5 +14,5 @@ gtPeripheralsCellMorphForDevice: aDevice
 			ifFalse: [ each name asMorph ].
 		cell addMorphBack: peripheralsMorph.
 		cell addMorphBack: '; ' asMorph].
-	cell submorphs last delete.
+	cell submorphs ifNotEmpty: [:s | s last delete].
 	^cell
