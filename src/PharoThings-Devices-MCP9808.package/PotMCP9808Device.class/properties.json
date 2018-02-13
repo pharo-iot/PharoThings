@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 2/13/2018 18:18",
 	"super" : "PotI2CDevice",
 	"category" : "PharoThings-Devices-MCP9808",
 	"classinstvars" : [ ],
