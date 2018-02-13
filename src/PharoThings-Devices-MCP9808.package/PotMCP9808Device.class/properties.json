@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotI2CDevice",
+	"category" : "PharoThings-Devices-MCP9808",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotMCP9808Device",
+	"type" : "normal"
+}
