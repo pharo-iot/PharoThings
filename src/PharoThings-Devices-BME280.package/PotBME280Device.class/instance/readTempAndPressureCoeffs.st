@@ -7,6 +7,6 @@ readTempAndPressureCoeffs
 	tempCoeffs :=  {self decodeSignedWordFrom: coeffs at: 1}
 		, (self decodeSignedWordArrayFrom: coeffs at: 3 size: 2).
 	pressureCoeffs := {self decodeSignedWordFrom: coeffs at: 1}
-		, self decodeSignedWordArrayFrom: coeffs at: 7 size: 8.
+		, (self decodeSignedWordArrayFrom: coeffs at: 7 size: 8).
 
 	^{tempCoeffs. pressureCoeffs}
