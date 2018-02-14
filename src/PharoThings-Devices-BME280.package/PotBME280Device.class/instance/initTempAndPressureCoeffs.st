@@ -6,5 +6,5 @@ initTempAndPressureCoeffs
 	
 	tCoeffs :=  {self decodeSignedWordFrom: data at: 1}
 		, (self decodeSignedWordArrayFrom: data at: 3 size: 2).
-	pCoeffs := {self decodeSignedWordFrom: data at: 1}
-		, (self decodeSignedWordArrayFrom: data at: 7 size: 8)
+	pCoeffs := {self decodeSignedWordFrom: data at: 7}
+		, (self decodeSignedWordArrayFrom: data at: 9 size: 8)
