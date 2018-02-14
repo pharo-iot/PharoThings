@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"temperatureCoeffs",
+		"pressureCoeffs",
+		"humidityCoeffs"
+	],
 	"name" : "PotBME280Device",
 	"type" : "normal"
 }
