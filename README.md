@@ -211,18 +211,14 @@ Subclases should implement device initialization in connection method. And they 
 ### MCP9808
 PotMCP9808Device implements model of temperature sensor MCP9808.
 
-The code for initialization and sensors reading is copied from Python example:
- 
-	https://github.com/ControlEverythingCommunity/MCP9808/blob/master/Python/MCP9808.py
+The code for initialization and sensors reading is copied from [Python example](https://github.com/ControlEverythingCommunity/MCP9808/blob/master/Python/MCP9808.py).
 	
 The method #readTemperature returns the value in Celsius
 
 ### BME280
 PotBME280Device implements temperature/pressure/humidity sensor BME280.
 
-The code for initialization and sensors reading is copied from Python example:
- 
-	https://github.com/ControlEverythingCommunity/BME280/blob/master/Python/BME280.py
+The code for initialization and sensors reading is copied from [Python example](https://github.com/ControlEverythingCommunity/BME280/blob/master/Python/BME280.py).
 	
 The method #readParameters returns three values: Celsius, hPa, humidity percents.
 In addition there is method #readTemperature to get single value.
@@ -230,8 +226,6 @@ In addition there is method #readTemperature to get single value.
 ### ADXL345
 PotADXL345Device implements accelerometer ADXL345.
 
-The code for initialization and sensors reading is copied from sunfolder example:
- 
-	https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html
+The code for initialization and sensors reading is copied from [sunfolder example](https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html).
 	
 The method #readCoordinates returns three values array.
