@@ -1,4 +1,4 @@
-data decoding
+decoding
 decodeSignedWordArrayFrom: coeffs at: index size: size
 	| result word |
 	result := Array new: size.

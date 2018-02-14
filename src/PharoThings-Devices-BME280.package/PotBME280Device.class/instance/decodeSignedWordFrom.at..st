@@ -1,4 +1,4 @@
-data decoding
+decoding
 decodeSignedWordFrom: coeffs at: index
 	| unsigned |
 	unsigned := self decodeUnsignedWordFrom: coeffs at: index.

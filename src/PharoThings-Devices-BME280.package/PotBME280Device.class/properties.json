@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 2/14/2018 16:01",
 	"super" : "PotI2CDevice",
 	"category" : "PharoThings-Devices-BME280",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"temperatureCoeffs",
-		"pressureCoeffs",
-		"humidityCoeffs"
+		"tCoeffs",
+		"hCoeffs",
+		"pCoeffs"
 	],
 	"name" : "PotBME280Device",
 	"type" : "normal"
