@@ -198,15 +198,15 @@ To interract with I2C device the I2C connection must be opened:
 i2cConnection := board connectToI2CDevice: addressInt
 ```
 The argument is address/id of target device which is physically connected to the board.
-For Rassperry board the result is an instance of WiringPiI2CConnection. It provide i/o functions which are available in wiringpi library:
-- read/write 8/16 bits from particular registry:
+For Rassperry board the result is an instance of WiringPiI2CConnection. It provides i/o functions which are available in WiringPi library. For example:
 ```Smalltalk
 i2cConnection read8BitsAt: 16rA1.
 i2cConnection write8BitsAt: 16rF2 data: 16r01.	
 ```
-In future the connection interface will improved to be common for different kind of boards.
+In future the connection interface will be improved to be common for different kind of boards.
 
-To implement model of I2C device the subclass of PotI2CDevice should be implemented. PotI2CDevice provide ready to use i2cConnection. Subclases should implement device initialization in connection method. And they should provide required methods to communicate with target device.
+To implement model of I2C device the subclass of PotI2CDevice should be implemented. PotI2CDevice provides prepared i2cConnection.
+Subclases should implement device initialization in connection method. And they should provide required methods to communicate with target devices.
 
 ### MCP9808
 PotMCP9808Device implements model of temperature sensor MCP9808.
