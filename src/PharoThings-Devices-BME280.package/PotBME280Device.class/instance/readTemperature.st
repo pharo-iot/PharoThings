@@ -3,6 +3,9 @@ readTemperature
 
 	| coeffs t var1 var2 |
 	coeffs := self readTempAndPressureСoeffs first.
+	self readHomidityСoeffs.
+	self setUpReading.
+	1 seconds wait.
 	t := self readParameters first.
 	
 	var1 := ((t) / 16384.0 - (coeffs at: 1) / 1024.0) * (coeffs at: 2).
