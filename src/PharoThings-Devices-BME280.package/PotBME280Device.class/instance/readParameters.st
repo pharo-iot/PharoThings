@@ -10,4 +10,6 @@ readParameters
 	adc_p := (((data at: 1) * 65536) + ((data at: 2) * 256) + ((data at: 2) & 16rF0)) / 16.
 	adc_t := (((data at: 4) * 65536) + ((data at: 5) * 256) + ((data at: 5) & 16rF0)) / 16.
 	"Convert the humidity data"
-	adc_h := (data at: 7) * 256 + (data at: 8)
+	adc_h := (data at: 7) * 256 + (data at: 8).
+	
+	^{adc_t. adc_p. adc_h}
