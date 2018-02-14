@@ -1,5 +1,5 @@
 controlling
-readHomidityСoeffs
+readHomidityCoeffs
 	| coeffs h1 h2 h3 h4 h5 h6 |
 	h1 := i2cConnection read8BitsAt: 16rA1.
 	coeffs := i2cConnection read8BitsArray: 7 startingAt: 16rE1.

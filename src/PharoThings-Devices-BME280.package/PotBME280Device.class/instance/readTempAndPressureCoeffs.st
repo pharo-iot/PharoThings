@@ -1,5 +1,5 @@
 controlling
-readTempAndPressureСoeffs
+readTempAndPressureCoeffs
 
 	| coeffs tempCoeffs pressureCoeffs |
 	coeffs := i2cConnection read8BitsArray: 24 startingAt: 16r88.

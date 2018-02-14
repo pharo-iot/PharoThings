@@ -2,8 +2,8 @@ controlling
 readTemperature
 
 	| coeffs t var1 var2 |
-	coeffs := self readTempAndPressureСoeffs first.
-	self readHomidityСoeffs.
+	coeffs := self readTempAndPressureCoeffs first.
+	self readHomidityCoeffs.
 	self setUpReading.
 	1 seconds wait.
 	t := self readParameters first.
