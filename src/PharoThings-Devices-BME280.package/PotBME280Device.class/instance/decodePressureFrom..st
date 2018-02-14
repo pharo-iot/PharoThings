@@ -5,7 +5,7 @@ decodePressureFrom: dataFromF7
 	| raw temperature var1 var2 p |
 	raw := ((dataFromF7 at: 1) << 12) | ((dataFromF7 at: 2) << 4) | ((dataFromF7 at: 3) >> 4).
 	temperature := self decodeTemperatureFrom: dataFromF7.
-	var1 := ((temperature * 1.8 + 32) / 2.0) - 64000.0.
+	var1 := ((temperature * 5120.0) / 2.0) - 64000.0.
 	var2 := var1 * var1 * (pCoeffs at: 6) / 32768.0.
 	var2 := var2 + (var1 * (pCoeffs at: 5) * 2.0).
 	var2 := (var2 / 4.0) + ((pCoeffs at: 4) * 65536.0).
