@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotI2CDevice",
+	"category" : "PharoThings-Devices-BME280",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotBME280Device",
+	"type" : "normal"
+}
