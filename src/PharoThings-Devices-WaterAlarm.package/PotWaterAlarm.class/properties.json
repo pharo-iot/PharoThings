@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "DenisKudryashov 2/16/2018 18:53",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-WaterAlarm",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"waterSensor",
+		"alarmPin",
+		"trackingProcess"
+	],
+	"name" : "PotWaterAlarm",
+	"type" : "normal"
+}
