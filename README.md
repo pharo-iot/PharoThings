@@ -191,3 +191,41 @@ It will turn the led on when the button is pressed.
 Now if you save the image this process will continue working after Pharo restart.
 
 All videos above show persistence in live.
+
+## I2C devices
+To interract with I2C device the I2C connection must be opened:
+```Smalltalk
+i2cConnection := board connectToI2CDevice: addressInt
+```
+The argument is address/id of target device which is physically connected to the board.
+For Rassperry board the result is an instance of WiringPiI2CConnection. It provides i/o functions which are available in WiringPi library. For example:
+```Smalltalk
+i2cConnection read8BitsAt: 16rA1.
+i2cConnection write8BitsAt: 16rF2 data: 16r01.	
+```
+In future the connection interface will be improved to be common for different kind of boards.
+
+To implement model of I2C device the subclass of PotI2CDevice should be implemented. PotI2CDevice provides prepared i2cConnection.
+Subclases should implement device initialization in connection method. And they should provide required methods to communicate with target devices.
+
+### MCP9808
+PotMCP9808Device implements model of temperature sensor MCP9808.
+
+The code for initialization and sensors reading is copied from [Python example](https://github.com/ControlEverythingCommunity/MCP9808/blob/master/Python/MCP9808.py).
+	
+The method #readTemperature returns the value in Celsius
+
+### BME280
+PotBME280Device implements temperature/pressure/humidity sensor BME280.
+
+The code for initialization and sensors reading is copied from [Python example](https://github.com/ControlEverythingCommunity/BME280/blob/master/Python/BME280.py).
+	
+The method #readParameters returns three values: Celsius, hPa, humidity percents.
+In addition there is method #readTemperature to get single value.
+
+### ADXL345
+PotADXL345Device implements accelerometer ADXL345.
+
+The code for initialization and sensors reading is copied from [sunfolder example](https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html).
+	
+The method #readCoordinates returns three values array.
