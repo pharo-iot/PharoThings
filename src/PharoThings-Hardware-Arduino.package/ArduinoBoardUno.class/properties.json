@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "KUNSANGABONDONGALABerfy 3/16/2018 14:53",
+	"super" : "ArduinoBoard",
+	"category" : "PharoThings-Hardware-Arduino",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ArduinoBoardUno",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+The class to handle the analog arduino pins.

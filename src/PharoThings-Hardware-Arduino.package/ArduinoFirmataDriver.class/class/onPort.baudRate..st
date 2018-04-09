@@ -1,5 +1,5 @@
 instance creation
 onPort: port baudRate: baudRate
 	^self new 
-		port port;
+		port: port;
 		baudRate: baudRate

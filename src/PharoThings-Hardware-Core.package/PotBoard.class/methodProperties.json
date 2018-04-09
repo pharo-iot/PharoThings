@@ -1,0 +1,39 @@
+{
+	"instance" : {
+		"setIOMode:into:" : " 3/16/2018 14:38:23",
+		"setPUDResister:into:" : " 3/16/2018 14:38:23",
+		"initialize" : " 3/16/2018 14:38:23",
+		"getDevice:" : " 3/16/2018 14:38:23",
+		"addNewConnector:with:" : " 3/16/2018 14:38:23",
+		"bindingsForPinsOf:" : " 3/16/2018 14:38:23",
+		"connectToI2CDevice:" : " 3/16/2018 14:38:23",
+		"getDeviceNamed:" : " 3/16/2018 14:38:23",
+		"driver:" : " 3/16/2018 14:38:23",
+		"removeDevice:" : " 3/16/2018 14:38:23",
+		"writeDigitalValue:into:" : "KUNSANGABONDONGALABerfy 3/23/2018 15:26",
+		"writePWMValue:into:" : " 3/16/2018 14:38:23",
+		"devices" : " 3/16/2018 14:38:23",
+		"findPinLike:" : " 3/16/2018 14:38:23",
+		"devices:" : " 3/16/2018 14:38:23",
+		"installDevice:" : " 3/16/2018 14:38:23",
+		"readDigitalValueFrom:" : " 3/16/2018 14:38:23",
+		"connect" : " 3/16/2018 14:38:23",
+		"connectWithExistingState" : " 3/16/2018 14:38:23",
+		"connectors:" : " 3/16/2018 14:38:23",
+		"connectorNamed:" : " 3/16/2018 14:38:23",
+		"connectDriver" : " 3/16/2018 14:38:23",
+		"disconnect" : " 3/16/2018 14:38:23",
+		"driver" : " 3/16/2018 14:38:23",
+		"connectors" : " 3/16/2018 14:38:23"
+	},
+	"class" : {
+		"shutDown:" : " 3/16/2018 14:38:23",
+		"new" : " 3/16/2018 14:38:23",
+		"defaultDriver" : " 3/16/2018 14:38:23",
+		"driver:" : " 3/16/2018 14:38:23",
+		"current" : " 3/16/2018 14:38:23",
+		"startUp:" : " 3/16/2018 14:38:23",
+		"dummy" : " 3/16/2018 14:38:23",
+		"setUpNewCurrent" : " 3/16/2018 14:38:23"
+	}
+}

@@ -1,3 +1,3 @@
 initialization
 defaultDriver
-	^ArduinoFirmataDriver onPort: '/dev/ttyACM0' baudRate: 57600
+	^ArduinoFirmataDriver onPort: '/dev/ttyACM1' baudRate: 57600
