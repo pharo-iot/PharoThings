@@ -2,11 +2,11 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "PharoThings-Hardware-Core",
-	"classinstvars" : [
-		"current"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Current"
+	],
 	"instvars" : [
 		"connectors",
 		"driver",
