@@ -4,5 +4,4 @@ current
 	
 	^Current ifNil: [ 
 		self setUpNewCurrent.
-		SessionManager default registerUserClassNamed: self name.
 		Current]
