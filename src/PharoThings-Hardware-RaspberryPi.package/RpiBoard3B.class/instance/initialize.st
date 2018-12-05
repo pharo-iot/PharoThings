@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	
-	self addExistingConnector: 'P1' with: { 
+	self extendConnector: 'P1' with: { 
 		PotSDAPin id: 0.PotSCLPin id: 1. 
 		PotGPIOPin id: 5 number: 21. PotGroundPin new. 
 		PotGPIOPin id: 6 number: 22. PotPwmGPIOPin id: 12 number: 26. 

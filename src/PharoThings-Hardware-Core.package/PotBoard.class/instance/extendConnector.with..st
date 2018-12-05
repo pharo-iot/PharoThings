@@ -1,8 +1,8 @@
 initialization
-addExistingConnector: aString with: pinsArray
+extendConnector: aString with: pinsArray
 	| connector pinsArrayExisting |
-	pinsArrayExisting  := (connectors at: 1) pins.
+	pinsArrayExisting  := (self connectorNamed: aString) pins.
 	connector := PotBoardConnector named: aString in: self with: pinsArrayExisting , pinsArray.
-	connectors removeAll.
+	connectors removeFirst.
 	connectors add: connector.
 	^connector
