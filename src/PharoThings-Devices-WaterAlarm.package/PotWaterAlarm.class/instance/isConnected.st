@@ -1,0 +1,4 @@
+testing
+isConnected
+	
+	^trackingProcess notNil

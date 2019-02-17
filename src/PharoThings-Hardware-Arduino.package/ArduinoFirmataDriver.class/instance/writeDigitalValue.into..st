@@ -1,3 +1,3 @@
 operations
 writeDigitalValue: aBit into: aPin
-	firmata digitalWrite: aPin value: aBit
+	firmata digitalWrite: aPin id value: aBit

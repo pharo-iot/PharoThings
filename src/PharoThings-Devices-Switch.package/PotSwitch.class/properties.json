@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DenisKudryashov 5/11/2017 17:09",
+	"commentStamp" : "DenisKudryashov 2/16/2018 18:54",
 	"super" : "PotDevice",
 	"category" : "PharoThings-Devices-Switch",
 	"classinstvars" : [ ],

@@ -1,5 +1,5 @@
 instance creation
 named: aString in: aBoard
-	^self new 
+	^self new
 		board: aBoard;
 		name: aString

@@ -1,4 +1,4 @@
 system startup
 shutDown: quitting
-	current ifNil: [ ^self ].
-	current disconnect
+	Current ifNil: [ ^self ].
+	Current disconnect

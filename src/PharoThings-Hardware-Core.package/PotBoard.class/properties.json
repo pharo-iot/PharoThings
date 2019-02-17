@@ -1,12 +1,12 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "AllexOliveira 12/7/2018 13:23",
 	"super" : "Object",
 	"category" : "PharoThings-Hardware-Core",
-	"classinstvars" : [
-		"current"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Current"
+	],
 	"instvars" : [
 		"connectors",
 		"driver",
