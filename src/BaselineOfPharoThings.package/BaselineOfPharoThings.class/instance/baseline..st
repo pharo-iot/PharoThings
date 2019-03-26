@@ -4,16 +4,16 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			baseline: 'Mocketry' with: [
-				spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ];
+				spec repository: 'github://dionisiydk/Mocketry:v4.0.6' ];
 			baseline: 'TelePharo' with: [
-				spec repository: 'github://dionisiydk/TelePharo:v0.3.x' ];
+				spec repository: 'github://pharo-ide/TelePharo:v0.3.2' ];
 			project: 'TelePharoServer' copyFrom: 'TelePharo' with: [
 				spec loads: 'Server'];
 			project: 'TelePharoClient' copyFrom: 'TelePharo' with: [
 				spec loads: 'Client'];
 			baseline: 'WiringPi' with: [
 				spec 
-					repository: 'github://pharo-iot/WiringPi:v0.1.x';
+					repository: 'github://pharo-iot/WiringPi:v0.1.2';
 					loads: 'Core' ].		
 		
 		spec 
@@ -30,7 +30,7 @@ baseline: spec
 				spec requires: #('PharoThings-Hardware-Core' #'WiringPi' ). ];
 			
 			baseline: 'Firmata' with: [
-				spec repository: 'github://pharo-iot/Firmata:v0.1.x'];			
+				spec repository: 'github://pharo-iot/Firmata:v0.1.1'];			
 			package: #'PharoThings-Hardware-Arduino' with: [
 				spec requires: #('PharoThings-Hardware-Core' #'Firmata' ). ];
 						
