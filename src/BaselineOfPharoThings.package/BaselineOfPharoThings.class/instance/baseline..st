@@ -4,9 +4,9 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			baseline: 'Mocketry' with: [
-				spec repository: 'github://pharo-iot/Mocketry:v4.0.7' ];
+				spec repository: 'github://dionisiydk/Mocketry:v4.0.7' ];
 			baseline: 'TelePharo' with: [
-				spec repository: 'github://pharo-ide/TelePharo:v0.3.2' ];
+				spec repository: 'github://pharo-ide/TelePharo:v0.3.3' ];
 			project: 'TelePharoServer' copyFrom: 'TelePharo' with: [
 				spec loads: 'Server'];
 			project: 'TelePharoClient' copyFrom: 'TelePharo' with: [
