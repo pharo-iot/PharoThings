@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-HD44780",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"instructionDic",
+		"displayControl",
+		"displayFunction",
+		"displayMode"
+	],
+	"name" : "PotHD44780Controller",
+	"type" : "normal"
+}

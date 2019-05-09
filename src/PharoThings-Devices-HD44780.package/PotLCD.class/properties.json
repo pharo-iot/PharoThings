@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PotHD44780Controller",
+	"category" : "PharoThings-Devices-HD44780",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"busMode",
+		"gpioDic"
+	],
+	"name" : "PotLCD",
+	"type" : "normal"
+}
