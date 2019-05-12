@@ -1,3 +1,3 @@
 initialization
 displayFunction: anArray
-	displayFunction := self bitOrArray: anArray
+	displayFunction := LCD_FUNCTIONSET bitOr: (self bitOrArray: anArray)

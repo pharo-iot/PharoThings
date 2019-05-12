@@ -1,3 +1,3 @@
 testing
 isConfigured 
-	^ gpioDic notNil
+	^ dataPins notNil

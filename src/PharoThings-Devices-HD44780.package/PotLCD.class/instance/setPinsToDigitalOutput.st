@@ -1,5 +1,5 @@
 initialization
 setPinsToDigitalOutput
 	| gpioArray |
-	gpioArray := (gpioDic values collect: #asGlamorousArray ) flattened.
+	gpioArray := ({ clockPin . modePin . dataPins . backlightPin } collect: #asGlamorousArray ) flattened.
 	gpioArray do: [ :i |i beDigitalOutput ]

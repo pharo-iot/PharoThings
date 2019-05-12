@@ -1,5 +1,5 @@
 commands
 returnHome 
-	self writeCommand: (instructionDic at: #LCD_RETURNHOME).
-	(Delay forSeconds: 0.003) wait.
-	"3 miliseconds waiting, this command takes a long time"
+	self writeCommand: LCD_RETURNHOME.
+	3 milliSeconds wait
+	"this command takes a long time"

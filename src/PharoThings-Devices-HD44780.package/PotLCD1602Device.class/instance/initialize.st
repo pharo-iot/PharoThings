@@ -2,6 +2,6 @@ initialization
 initialize
 	super initialize.
 	self
-		displayControl: #('LCD_DISPLAYON' 'LCD_CURSOROFF' 'LCD_BLINKOFF');
-		displayFunction: #('LCD_4BITMODE' 'LCD_1LINE' 'LCD_2LINE' 'LCD_5x8DOTS');
-		displayMode: #('LCD_ENTRYLEFT' 'LCD_ENTRYSHIFTDECREMENT')
+		displayControl: (Array with: LCD_DISPLAYON with: LCD_CURSOROFF with: LCD_BLINKOFF);
+		displayFunction: (Array with: LCD_4BITMODE with: LCD_1LINE with: LCD_2LINE with: LCD_5x8DOTS);
+		displayMode: (Array with: LCD_ENTRYLEFT with: LCD_ENTRYSHIFTDECREMENT)

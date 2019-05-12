@@ -1,3 +1,3 @@
 writing
 writeCommand: anHex
-	self write: anHex charMode: 0
+	self write: anHex mode: 0

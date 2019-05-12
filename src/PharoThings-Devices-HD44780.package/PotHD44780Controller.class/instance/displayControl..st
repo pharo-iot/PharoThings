@@ -1,4 +1,3 @@
 initialization
 displayControl: anArray
-	displayControl := self bitOrArray: anArray.
-	
+	displayControl := LCD_DISPLAYCONTROL bitOr: (self bitOrArray: anArray)

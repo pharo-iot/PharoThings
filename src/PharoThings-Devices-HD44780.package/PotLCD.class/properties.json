@@ -6,8 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"busMode",
-		"gpioDic"
+		"modePin",
+		"clockPin",
+		"dataPins",
+		"backlightPin"
 	],
 	"name" : "PotLCD",
 	"type" : "normal"

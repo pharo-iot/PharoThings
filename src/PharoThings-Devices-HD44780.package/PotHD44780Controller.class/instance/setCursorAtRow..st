@@ -1,5 +1,3 @@
 commands
-setCursorAtRow: anInteger
-	self setCursorAtRow: anInteger col: 1
-
-	
+setCursorAtRow: row
+	self setCursorAtRow: row column: 1

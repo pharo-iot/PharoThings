@@ -1,5 +1,5 @@
 commands
 clearDisplay
-	self writeCommand: (instructionDic at: #LCD_CLEARDISPLAY).
-	(Delay forSeconds: 0.003) wait
-	"3 miliseconds waiting to clear the display"
+	self writeCommand: LCD_CLEARDISPLAY.
+	3 milliSeconds wait
+	"waiting to clear the display"
