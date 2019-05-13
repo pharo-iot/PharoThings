@@ -1,3 +1,0 @@
-initialization
-gpioConfiguration
-	board configurePotLCD: self

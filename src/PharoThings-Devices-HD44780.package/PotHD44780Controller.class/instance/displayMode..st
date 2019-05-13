@@ -1,3 +1,3 @@
 initialization
 displayMode: anArray
-	displayMode := LCD_ENTRYMODESET bitOr: (self bitOrArray: anArray)
+	displayMode := LCD_ENTRYMODESET bitOr: (self hexArrayToNumber: anArray)
