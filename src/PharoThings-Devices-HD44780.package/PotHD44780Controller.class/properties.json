@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "AllexOliveira 5/14/2019 03:10",
 	"super" : "PotDevice",
 	"category" : "PharoThings-Devices-HD44780",
 	"classinstvars" : [ ],

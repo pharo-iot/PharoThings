@@ -1,3 +1,3 @@
 initialization
 setDisplayMode
-	self writeCommand: (LCD_ENTRYMODESET bitOr: displayMode)
+	self writeCommand: (LCD_DISPLAYCONTROL bitOr: displayMode)
