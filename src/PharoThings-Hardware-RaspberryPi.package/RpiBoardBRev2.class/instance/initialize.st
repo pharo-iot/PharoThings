@@ -8,4 +8,3 @@ initialize
 		PotGPIOPin id: 30 number: 10. PotGPIOPin id: 31 number: 11.
 		PotGroundPin new. PotGroundPin new.
 	}
-	

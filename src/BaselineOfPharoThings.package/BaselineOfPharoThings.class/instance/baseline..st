@@ -6,7 +6,7 @@ baseline: spec
 			baseline: 'Mocketry' with: [
 				spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ];
 			baseline: 'TelePharo' with: [
-				spec repository: 'github://dionisiydk/TelePharo:v0.2.x' ];
+				spec repository: 'github://dionisiydk/TelePharo:v0.3.x' ];
 			project: 'TelePharoServer' copyFrom: 'TelePharo' with: [
 				spec loads: 'Server'];
 			project: 'TelePharoClient' copyFrom: 'TelePharo' with: [
