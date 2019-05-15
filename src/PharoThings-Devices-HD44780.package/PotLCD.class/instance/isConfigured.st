@@ -1,0 +1,3 @@
+testing
+isConfigured 
+	^ dataPins notNil
