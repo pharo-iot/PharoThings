@@ -1,3 +1,3 @@
-*PharoThings-Devices-HD44780
+acccessing
 configureComplexDevice: aDevice
     aDevice configureForRpiBoard3B: self
