@@ -10,4 +10,4 @@ initialize
 		PotMISOPin id: 19. PotGPIOPin id: 16 number: 27. 
 		PotGPIOPin id: 26 number: 25. PotMOSIPin id: 20. 
 		PotGroundPin new. PotSCLKPin id: 21.  
-	}
+	 }
