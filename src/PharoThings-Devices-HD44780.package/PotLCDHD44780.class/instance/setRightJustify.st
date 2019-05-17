@@ -1,4 +1,3 @@
 commands
 setRightJustify
-	displayMode := displayMode bitOr: LCD_ENTRYSHIFTINCREMENT.
-	self setDisplayMode
+	self setDisplayMode: {displayMode bitOr: LCD_ENTRYSHIFTINCREMENT}

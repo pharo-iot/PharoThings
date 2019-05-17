@@ -1,4 +1,3 @@
 commands
 enableBlinkCursor
-	displayControl := displayControl bitOr: LCD_BLINKON.
-	self setDisplayControl
+	self setDisplayControl: {displayControl bitOr: LCD_BLINKON}

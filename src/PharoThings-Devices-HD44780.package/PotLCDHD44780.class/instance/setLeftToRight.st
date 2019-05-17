@@ -1,4 +1,3 @@
 commands
 setLeftToRight
-	displayMode := displayMode bitOr: LCD_ENTRYLEFT.
-	self setDisplayMode
+	self setDisplayMode: {displayMode bitOr: LCD_ENTRYLEFT}

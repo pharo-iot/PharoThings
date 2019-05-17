@@ -1,4 +1,3 @@
 commands
 setLeftJustify
-	displayMode := displayMode bitAnd: (LCD_ENTRYSHIFTINCREMENT bitInvert).
-	self setDisplayMode
+	self setDisplayMode: {displayMode bitAnd: (LCD_ENTRYSHIFTINCREMENT bitInvert)}

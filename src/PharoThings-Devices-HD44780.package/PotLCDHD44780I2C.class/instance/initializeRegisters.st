@@ -7,7 +7,7 @@ initializeRegisters
 		writeCommand: 16r03;
 		writeCommand: 16r02;
 		"Write registers"
-		setDisplayControl;
-		setDisplayFunction;
-		setDisplayMode;
+		setDisplayControl: {0};
+		setDisplayFunction: {0};
+		setDisplayMode: {0} ;
 		clearDisplay
