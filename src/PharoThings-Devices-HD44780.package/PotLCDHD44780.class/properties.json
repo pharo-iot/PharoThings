@@ -45,6 +45,6 @@
 		"displayFunction",
 		"displayMode"
 	],
-	"name" : "PotHD44780Controller",
+	"name" : "PotLCDHD44780",
 	"type" : "normal"
 }

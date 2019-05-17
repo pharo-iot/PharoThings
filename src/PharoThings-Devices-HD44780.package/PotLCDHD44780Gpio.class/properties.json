@@ -1,13 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "PotHD44780Controller",
+	"super" : "PotLCDHD44780",
 	"category" : "PharoThings-Devices-HD44780",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"i2cConnection"
+		"modePin",
+		"clockPin",
+		"dataPins",
+		"backlightPin"
 	],
-	"name" : "PotLCDI2C",
+	"name" : "PotLCDHD44780Gpio",
 	"type" : "normal"
 }
