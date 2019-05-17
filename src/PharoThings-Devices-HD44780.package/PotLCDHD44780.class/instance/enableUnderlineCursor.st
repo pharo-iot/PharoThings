@@ -1,3 +1,4 @@
 commands
 enableUnderlineCursor
-	self setDisplayControl: {displayControl bitOr: LCD_CURSORON}
+	self 
+		setDisplayControl: (displayControl bitOr: LCD_CURSORON)

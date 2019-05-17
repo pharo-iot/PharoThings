@@ -11,9 +11,9 @@ or to I2C
 lcd := board installDevice: PotLCD1602DeviceI2C new.
 
 (playground. change the board model  to your board)
-lcd := (RpiBoard3B new) installDevice: PotLCD1602Device new.
+lcd := (RpiBoard3B current) installDevice: PotLCD1602Device new.
 or to I2C
-lcd := (RpiBoard3B new) installDevice: PotLCD1602DeviceI2C new.
+lcd := (RpiBoard3B current) installDevice: PotLCD1602DeviceI2C new.
 
 Sent a message to LCD display:
 lcd showMessage: 
@@ -22,3 +22,23 @@ your text second row'
 
 Clear LCD display:
 lcd clearDisplay
+
+API:
+lcd showMessage: 'Hello
+Pharo IoT'.
+lcd clearDisplay.
+lcd disableBlinkCursor.
+lcd disableDisplay.
+lcd disableUnderlineCursor. 
+lcd enableBlinkCursor.
+lcd enableDisplay.
+lcd enableUnderlineCursor.
+lcd moveCursorLeft.
+lcd moveCursorRight.
+lcd returnHome.
+lcd setCursorAtRow:2.
+lcd setCursorAtRow:1 column:1.
+lcd setLeftJustify.
+lcd setLeftToRight.
+lcd setRightJustify.
+lcd setRightToLeft.

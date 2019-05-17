@@ -3,7 +3,7 @@ write: anHex mode: aBit
 	"mode:0 to send commands or mode:1 to send characters. Use writeCommand: and writeCharacter:"
 	| j |
 	j := 1.
-	1 milliSeconds wait.
+	999999 nanoSeconds wait.
 	"1 miliseconds waiting to prevent write too quickly"
 	modePin value: aBit.
 	8 to: 1 by: -1 do: [ :i | 

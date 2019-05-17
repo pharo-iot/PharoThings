@@ -1,4 +1,4 @@
 initialization
-setDisplayMode: anArray
-	displayMode := displayMode bitOr: (self hexArrayBitOrToNumber: anArray).
-	self writeCommand: (LCD_ENTRYMODESET bitOr: displayMode)
+setDisplayMode: anHex
+	self writeCommand: (LCD_ENTRYMODESET bitOr: anHex).
+	1 milliSeconds wait

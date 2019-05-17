@@ -1,4 +1,4 @@
 initialization
-setDisplayFunction: anArray
-	displayFunction := displayFunction bitOr: (self hexArrayBitOrToNumber: anArray).
-	self writeCommand: (LCD_FUNCTIONSET bitOr: displayFunction)
+setDisplayFunction: anHex
+	self writeCommand: (LCD_FUNCTIONSET bitOr: anHex).
+	1 milliSeconds wait

@@ -1,3 +1,4 @@
 commands
 setRightToLeft
-	self setDisplayMode: {displayMode bitAnd: (LCD_ENTRYLEFT bitInvert)}
+	self 
+		setDisplayMode: {displayMode bitAnd: (LCD_ENTRYLEFT bitInvert)}

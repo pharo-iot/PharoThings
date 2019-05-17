@@ -6,4 +6,4 @@ showMessage: aString
 		do: [ :char | 
 			char = Character cr
 				ifTrue: [ self setCursorAtRow: (i := i + 1) ]
-				ifFalse: [ self writeCharacter: char ] ]
+				ifFalse: [ self writeCharacter: char asciiValue ] ]
