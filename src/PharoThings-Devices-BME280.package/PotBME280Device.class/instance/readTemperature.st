@@ -1,3 +1,3 @@
 controlling
 readTemperature
-	^self readParameters first
+	^self readParameters first printShowingDecimalPlaces: 1
