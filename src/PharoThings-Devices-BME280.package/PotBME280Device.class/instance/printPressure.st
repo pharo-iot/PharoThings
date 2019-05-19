@@ -1,3 +1,3 @@
 printing
 printPressure
-	^self readParameters second printShowingDecimalPlaces: 1
+	^self readPressure printShowingDecimalPlaces: 1

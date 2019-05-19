@@ -1,3 +1,3 @@
 printing
 printHumidity
-	^self readParameters last printShowingDecimalPlaces: 1
+	^self readHumidity printShowingDecimalPlaces: 1

@@ -1,3 +1,3 @@
 printing
 printTemperature
-	^self readParameters first printShowingDecimalPlaces: 1
+	^self readTemperature printShowingDecimalPlaces: 1
