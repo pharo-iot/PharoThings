@@ -1,3 +1,3 @@
 controlling
 readHumidity
-	^self readParameters last printShowingDecimalPlaces: 1
+	^self readParameters last round: 1
