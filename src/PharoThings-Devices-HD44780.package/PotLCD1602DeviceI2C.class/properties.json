@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "PotLCDI2C",
+	"super" : "PotLCDHD44780I2C",
 	"category" : "PharoThings-Devices-HD44780",
 	"classinstvars" : [ ],
 	"pools" : [ ],

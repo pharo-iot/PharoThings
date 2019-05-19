@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AllexOliveira 5/17/2019 18:18",
+	"super" : "PotLCDHD44780",
+	"category" : "PharoThings-Devices-HD44780",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"i2cConnection"
+	],
+	"name" : "PotLCDHD44780I2C",
+	"type" : "normal"
+}
