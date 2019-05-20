@@ -1,3 +1,0 @@
-initialization
-sdaPinId
-	^0

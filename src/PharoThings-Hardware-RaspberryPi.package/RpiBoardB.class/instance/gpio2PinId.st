@@ -1,3 +1,0 @@
-initialization
-gpio2PinId
-	self subclassResponsibility 

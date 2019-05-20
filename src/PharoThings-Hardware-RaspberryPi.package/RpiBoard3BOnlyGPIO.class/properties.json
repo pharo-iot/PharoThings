@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "AllexOliveira 5/20/2019 03:09",
-	"super" : "RpiBoard3BExtended",
+	"commentStamp" : "",
+	"super" : "RpiBoard3BOnlyGPIOAndI2C",
 	"category" : "PharoThings-Hardware-RaspberryPi",
 	"classinstvars" : [ ],
 	"pools" : [ ],

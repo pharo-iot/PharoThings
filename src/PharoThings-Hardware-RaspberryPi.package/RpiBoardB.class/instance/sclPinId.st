@@ -1,3 +1,0 @@
-initialization
-sclPinId
-	self subclassResponsibility 

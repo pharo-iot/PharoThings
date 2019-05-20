@@ -1,3 +1,0 @@
-initialization
-sclPinId
-	^3

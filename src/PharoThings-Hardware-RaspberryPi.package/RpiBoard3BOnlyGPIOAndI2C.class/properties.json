@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "RpiBoard3BExtended",
+	"super" : "RpiBoard3B",
 	"category" : "PharoThings-Hardware-RaspberryPi",
 	"classinstvars" : [ ],
 	"pools" : [ ],
