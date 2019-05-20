@@ -1,0 +1,1 @@
+Using the GPIOs as basic IO. You can use a board with all GPIOs configured as IO or adding I2C protocol

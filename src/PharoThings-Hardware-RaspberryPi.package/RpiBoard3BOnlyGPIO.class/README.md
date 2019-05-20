@@ -1,0 +1,1 @@
+Use all GPIOs as basic GPIO (PotGPIOPin). This way you can use more GPIOs.

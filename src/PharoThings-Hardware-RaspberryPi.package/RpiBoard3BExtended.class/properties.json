@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "AllexOliveira 5/20/2019 03:23",
+	"super" : "RpiBoard",
+	"category" : "PharoThings-Hardware-RaspberryPi",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RpiBoard3BExtended",
+	"type" : "normal"
+}

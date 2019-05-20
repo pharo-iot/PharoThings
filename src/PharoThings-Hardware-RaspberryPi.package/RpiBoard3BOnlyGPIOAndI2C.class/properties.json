@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RpiBoard3BExtended",
+	"category" : "PharoThings-Hardware-RaspberryPi",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RpiBoard3BOnlyGPIOAndI2C",
+	"type" : "normal"
+}

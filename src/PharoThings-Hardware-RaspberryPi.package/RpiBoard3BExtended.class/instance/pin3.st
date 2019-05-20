@@ -1,0 +1,3 @@
+initialization
+pin3
+	self subclassResponsibility
