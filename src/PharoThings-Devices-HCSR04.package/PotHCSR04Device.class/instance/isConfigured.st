@@ -1,0 +1,3 @@
+initialization
+isConfigured 
+	^ triggerPin notNil
