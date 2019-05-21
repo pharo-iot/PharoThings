@@ -37,6 +37,18 @@ If you use the latest desktop version of Raspbian skip this step (WiringPi is in
 
 PharoThings uses WiringPi to control Raspberry pins. You need install it in your board. There is a convenient prebuilt package [here](https://github.com/hamishcunningham/wiringpi/tree/master/package/2.13/unstable). Follow [install](https://github.com/hamishcunningham/wiringpi/blob/master/INSTALL) instructions or do it your own way.
 
+You can test the WiringPi library in terminal. More information [here](http://wiringpi.com/the-gpio-utility/)
+```
+gpio readall
+```
+
+If you receive any error, you should update the WiringPi library:
+```
+cd /tmp
+wget https://unicorn.drogon.net/wiringpi-2.46-1.deb
+sudo dpkg -i wiringpi-2.46-1.deb
+```
+
 5) Start Pharo on Raspberry with the server option:
 ```bash
 pharo --headless Server.image  remotePharo --startServerOnPort=40423
