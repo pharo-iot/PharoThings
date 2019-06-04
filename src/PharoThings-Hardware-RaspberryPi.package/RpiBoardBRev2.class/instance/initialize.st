@@ -1,7 +1,6 @@
 initialization
 initialize
 	super initialize.
-	
 	self addNewConnector: 'P5' with: { 
 		PotPower5VPin new. PotPower3dot3VPin new. 
 		PotGPIOPin id: 28 number: 8. PotGPIOPin id: 29 number: 9.

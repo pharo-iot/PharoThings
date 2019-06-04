@@ -1,3 +1,0 @@
-initialization
-pin13
-	self subclassResponsibility
