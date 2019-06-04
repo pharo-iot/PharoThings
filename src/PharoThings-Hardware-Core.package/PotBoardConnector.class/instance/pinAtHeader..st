@@ -1,3 +1,3 @@
 accessing
-pinAtHeader: anInteger 
-	^pins at: anInteger 
+pinAtHeader: anInteger
+	^pins at: anInteger
