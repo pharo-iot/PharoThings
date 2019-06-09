@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board",
-		"pin"
+		"pin",
+		"board"
 	],
-	"name" : "PotBoardPinTestCase",
+	"name" : "PotGPIOPinTests",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "PotSPIPin",
+	"super" : "Object",
 	"category" : "PharoThings-Hardware-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PotCEPin",
+	"name" : "PotGPIOFunction",
 	"type" : "normal"
 }

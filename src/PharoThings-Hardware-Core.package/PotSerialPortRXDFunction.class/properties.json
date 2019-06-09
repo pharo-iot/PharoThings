@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "PotSPIPin",
+	"super" : "PotSerialPortFunction",
 	"category" : "PharoThings-Hardware-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PotCEPin",
+	"name" : "PotSerialPortRXDFunction",
 	"type" : "normal"
 }

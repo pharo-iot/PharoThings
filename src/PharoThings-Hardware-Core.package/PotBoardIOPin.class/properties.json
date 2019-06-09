@@ -7,6 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"id",
+		"number",
+		"function",
 		"ioMode",
 		"pudResister",
 		"lastValue"
