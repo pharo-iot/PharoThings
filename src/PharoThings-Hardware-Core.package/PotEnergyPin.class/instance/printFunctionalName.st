@@ -1,3 +1,3 @@
 accessing
-name
+printFunctionalName
 	^self voltage asString, 'v'

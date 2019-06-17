@@ -1,0 +1,3 @@
+accessing
+printFunctionalName
+	self subclassResponsibility

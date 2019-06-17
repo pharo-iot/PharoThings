@@ -4,5 +4,7 @@ printOn: aStream
 	
 	aStream 
 		nextPut: $(;
-		nextPutAll: self name;
+		nextPutAll: number asString;
+		nextPutAll: ': ';
+		nextPutAll: function name;
 		nextPut: $)
