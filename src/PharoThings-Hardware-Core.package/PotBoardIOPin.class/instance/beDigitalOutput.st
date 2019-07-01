@@ -1,3 +1,3 @@
-accessing
+controlling
 beDigitalOutput
 	self ioMode: PotDigitalOutputPinMode new

@@ -1,3 +1,3 @@
-accessing
+controlling
 enablePullUpResister
 	self pudResister: PotPullUpPinResistor 
