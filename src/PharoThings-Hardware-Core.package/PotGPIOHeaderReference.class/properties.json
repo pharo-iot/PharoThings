@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "PharoThings-Hardware-Core-Tests",
+	"super" : "Object",
+	"category" : "PharoThings-Hardware-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board",
-		"pin"
+		"connectorName"
 	],
-	"name" : "PotGPIOPinTests",
+	"name" : "PotGPIOHeaderReference",
 	"type" : "normal"
 }
