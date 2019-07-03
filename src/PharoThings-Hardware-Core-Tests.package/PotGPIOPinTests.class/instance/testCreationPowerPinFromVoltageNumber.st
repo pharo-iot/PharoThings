@@ -3,4 +3,4 @@ testCreationPowerPinFromVoltageNumber
 	
 	pin := 3.3 powerPin
 	
-	pin should beInstanceOf: PotPowerPin
+	pin should beInstanceOf: PotPower3dot3VPin

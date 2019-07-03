@@ -1,3 +1,3 @@
 accessing
 name
-	^'GPIO', number asString
+	^'GPIO', id asString

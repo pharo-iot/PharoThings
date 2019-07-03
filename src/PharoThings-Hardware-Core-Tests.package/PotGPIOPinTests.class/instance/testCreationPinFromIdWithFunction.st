@@ -1,7 +1,7 @@
 tests
 testCreationPinFromIdWithFunction
 	
-	pin := 17 gpio: #PWM.
+	pin := 17 gpio: PotPWMFunction.
 	
 	pin should beInstanceOf: PotBoardIOPin.
 	pin id should equal: 17.

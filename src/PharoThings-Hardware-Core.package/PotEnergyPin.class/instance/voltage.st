@@ -1,3 +1,3 @@
 accessing
 voltage
-	self subclassResponsibility 
+	^self class voltage
