@@ -3,11 +3,11 @@ initialize
 	super initialize.
 	
 	self extendConnector: 'P1' with: { 
-		PotSDAPin id: 0.PotSCLPin id: 1. 
-		PotGPIOPin id: 5 number: 21. PotGroundPin new. 
-		PotGPIOPin id: 6 number: 22. PotPwmGPIOPin id: 12 number: 26. 
-		PotPwmGPIOPin id: 13 number: 23. PotGroundPin new. 
-		PotMISOPin id: 19. PotGPIOPin id: 16 number: 27. 
-		PotGPIOPin id: 26 number: 25. PotMOSIPin id: 20. 
-		PotGroundPin new. PotSCLKPin id: 21.  
+		0 gpio: PotSDAFunction. 1 gpio: PotSCLFunction. 
+		5 gpio. 0 powerPin. 
+		6 gpio. 12 gpio: PotPWMFunction. 
+		13 gpio: PotPWMFunction. 0 powerPin. 
+		19 gpio: PotMISOFunction. 16 gpio. 
+		26 gpio. 20 gpio: PotMOSIFunction. 
+		0 powerPin. 21 gpio: PotSCLKFunction.  
 	 }

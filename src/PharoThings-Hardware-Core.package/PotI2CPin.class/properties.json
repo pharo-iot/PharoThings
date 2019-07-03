@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "PotBoardIOPin",
+	"super" : "PotGPIO",
 	"category" : "PharoThings-Hardware-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
