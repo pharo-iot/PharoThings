@@ -1,3 +1,3 @@
 converting
 asBinding
-	^self name asLowercase asSymbol -> self
+	^self name asSymbol -> self

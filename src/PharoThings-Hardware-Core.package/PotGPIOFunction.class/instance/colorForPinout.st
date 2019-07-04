@@ -1,3 +1,3 @@
 accessing
-color
+colorForPinout
 	^Color green muchDarker

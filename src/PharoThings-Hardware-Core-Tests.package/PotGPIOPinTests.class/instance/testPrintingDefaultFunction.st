@@ -3,4 +3,4 @@ testPrintingDefaultFunction
 	
 	pin id: 100.
 	
-	pin printFunction should equal: 'GPIO100'
+	pin printFunction should equal: 'gpio100'
