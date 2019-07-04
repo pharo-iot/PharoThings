@@ -1,3 +1,3 @@
 accessing
-printFunction
+name
 	^'Ground'

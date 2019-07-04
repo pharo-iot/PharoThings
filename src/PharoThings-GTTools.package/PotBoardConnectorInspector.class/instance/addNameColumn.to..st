@@ -6,4 +6,4 @@ addNameColumn: columnNumber to: aTable
 		evaluated: [ :row | | pin |
 			pin := row at: columnNumber.  
 			self pinCellMorphWith: pin gtNameMorph for: pin  ] 
-		width: 50
+		width: 55
