@@ -1,3 +1,3 @@
 printing
 printFunction
-	^function printPin: self
+	^function name

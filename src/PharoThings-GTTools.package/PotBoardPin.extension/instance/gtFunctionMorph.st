@@ -1,7 +1,7 @@
 *PharoThings-GTTools
-gtNameMorph
+gtFunctionMorph
 
-	^self name asMorph 
+	^self printFunction asMorph 
 		color: self colorForPinout;
 		emphasis: TextEmphasis bold emphasisCode;
 		yourself
