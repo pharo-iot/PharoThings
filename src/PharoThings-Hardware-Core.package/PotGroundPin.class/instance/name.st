@@ -1,3 +1,3 @@
 accessing
 name
-	^'Ground (', super name, ')'
+	^'Ground'

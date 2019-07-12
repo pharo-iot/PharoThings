@@ -1,0 +1,3 @@
+accessing
+colorForPinout
+	^Color black
