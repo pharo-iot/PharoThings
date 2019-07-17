@@ -1,4 +1,4 @@
 accessing
-findPinLike: aPin
+pinLike: aPin
 
 	^self pinWithId: aPin id
