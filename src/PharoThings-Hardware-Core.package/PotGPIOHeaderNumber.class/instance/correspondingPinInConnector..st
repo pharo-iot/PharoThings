@@ -1,4 +1,4 @@
 accessing
 correspondingPinInConnector: aBoardConnector
 
-	^aBoardConnector pinAtHeader: value
+	^aBoardConnector pinAtHeaderNumber: value
