@@ -1,4 +1,12 @@
 commands
 readDistance
-	self sendPulse.
-	^ (self readPinStateDuration * 34300 / 2 / 1000000) asFloat round: 1
+	"Send a pulse, read the travel time of pulse and return the distance in cm"
+	| travelTime semaphore |
+	semaphore := Semaphore new.
+	[ self sendPulse.
+	travelTime := self readPinStateDuration.
+	semaphore signal ] fork.
+	semaphore 
+		wait: 100 milliSeconds
+		onCompletion: [ ^ self calculateDistance: travelTime ] 
+		onTimeout: [ self rebootSensor. ^ -1 ]
