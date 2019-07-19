@@ -7,5 +7,5 @@ testGettingPinAtHeaderNumber
 	pin3 := PotGPIO id: 30.
 	connector pins: {  pin1. pin2. pin3 }.
 	
-	(connector pinAtHeader: 2) should be: pin2.
-	(connector pinAtHeader: 3) should be: pin3
+	(connector pinAtHeaderNumber: 2) should be: pin2.
+	(connector pinAtHeaderNumber: 3) should be: pin3
