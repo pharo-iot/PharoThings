@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "AllexOliveira 7/19/2019 15:34",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Devices-HCSR04",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"triggerPin",
+		"echoPin"
+	],
+	"name" : "PotHCSR04Device",
+	"type" : "normal"
+}
