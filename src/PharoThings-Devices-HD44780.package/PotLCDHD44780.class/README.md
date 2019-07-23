@@ -38,7 +38,7 @@ lcd moveCursorRight.
 lcd returnHome.
 lcd setCursorAtRow:2.
 lcd setCursorAtRow:1 column:1.
-lcd setLeftJustify.
+lcd setLeftAutoScroll.
 lcd setLeftToRight.
-lcd setRightJustify.
+lcd setRightAutoScroll.
 lcd setRightToLeft.
