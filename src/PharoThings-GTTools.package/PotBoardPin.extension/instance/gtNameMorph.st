@@ -2,6 +2,6 @@
 gtNameMorph
 
 	^self name asMorph 
-		color: self color;
+		color: self colorForPinout;
 		emphasis: TextEmphasis bold emphasisCode;
 		yourself

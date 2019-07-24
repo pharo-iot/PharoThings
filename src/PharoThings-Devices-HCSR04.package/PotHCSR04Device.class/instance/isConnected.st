@@ -1,0 +1,3 @@
+initialization
+isConnected
+	^ board notNil

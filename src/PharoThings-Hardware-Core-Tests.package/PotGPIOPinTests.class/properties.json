@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PharoThings-Hardware-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"board",
+		"pin"
+	],
+	"name" : "PotGPIOPinTests",
+	"type" : "normal"
+}

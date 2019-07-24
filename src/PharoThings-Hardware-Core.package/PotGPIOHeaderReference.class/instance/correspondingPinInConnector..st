@@ -1,0 +1,4 @@
+accessing
+correspondingPinInConnector: aBoardConnector
+
+	self subclassResponsibility 

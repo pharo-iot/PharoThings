@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotLCDHD44780Gpio",
+	"category" : "PharoThings-Devices-HD44780",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotLCD1602Device",
+	"type" : "normal"
+}

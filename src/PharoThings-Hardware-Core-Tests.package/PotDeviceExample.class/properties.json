@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Hardware-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pin1",
+		"pin2",
+		"connected"
+	],
+	"name" : "PotDeviceExample",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PotGPIOHeaderReference",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"row",
+		"column"
+	],
+	"name" : "PotGPIOHeaderPosition",
+	"type" : "normal"
+}

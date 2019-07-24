@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "PotBoardPin",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"function",
+		"ioMode",
+		"pudResister",
+		"lastValue"
+	],
+	"name" : "PotGPIO",
+	"type" : "normal"
+}

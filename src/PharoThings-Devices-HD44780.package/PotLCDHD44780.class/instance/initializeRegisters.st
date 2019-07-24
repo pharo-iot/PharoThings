@@ -1,0 +1,3 @@
+initialization
+initializeRegisters
+	self subclassResponsibility 

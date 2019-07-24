@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotSPIFunction",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotMISOFunction",
+	"type" : "normal"
+}

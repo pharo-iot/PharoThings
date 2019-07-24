@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "AllexOliveira 7/23/2019 11:56",
+	"super" : "PotLCDHD44780",
+	"category" : "PharoThings-Devices-HD44780",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modePin",
+		"clockPin",
+		"dataPins",
+		"backlightPin"
+	],
+	"name" : "PotLCDHD44780Gpio",
+	"type" : "normal"
+}

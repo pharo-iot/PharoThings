@@ -1,3 +1,0 @@
-accessing
-enablePullDownResister
-	self pudResister: PotPullDownPinResistor 
