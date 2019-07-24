@@ -1,5 +1,5 @@
 initialization
-configureDefaultPeripherals
+configurePeripherals
 	"Pin mapping:
 	---------------------------------------------------------------
 	VSS|VDD|V0 |RS |RW | E |D0 |D1 |D2 |D3 |D4 |D5 |D6 |D7 | A | K 
