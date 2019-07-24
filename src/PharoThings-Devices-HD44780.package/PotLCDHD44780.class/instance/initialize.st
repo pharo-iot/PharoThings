@@ -1,5 +1,6 @@
 initialization
 initialize
+	self configurePeripherals.
 	LCD_CLEARDISPLAY := 16r01.
 	LCD_RETURNHOME := 16r02.
 	LCD_ENTRYMODESET := 16r04.
