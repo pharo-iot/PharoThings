@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "AllexOliveira 8/6/2019 17:51",
+	"super" : "PotI2CDevice",
+	"category" : "PharoThings-Devices-MPU6050",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotMPU6050Device",
+	"type" : "normal"
+}
