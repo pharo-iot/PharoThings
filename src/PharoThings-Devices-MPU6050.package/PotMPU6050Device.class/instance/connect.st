@@ -1,4 +1,5 @@
 controlling
 connect
-	super connect
+	super connect.
+	self wakeUpSensor 
 	
