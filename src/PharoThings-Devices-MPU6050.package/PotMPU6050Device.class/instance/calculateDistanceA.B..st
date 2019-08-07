@@ -1,3 +1,3 @@
 controlling
-calculateDistanceA: anAccelerometerSkaliertA B: anAccelerometerSkaliertB
-	^ ((anAccelerometerSkaliertA*anAccelerometerSkaliertA)+(anAccelerometerSkaliertB*anAccelerometerSkaliertB)) sqrt
+calculateDistanceA: anAccelerometerScaledA B: anAccelerometerScaledB
+	^ ((anAccelerometerScaledA*anAccelerometerScaledA)+(anAccelerometerScaledB*anAccelerometerScaledB)) sqrt

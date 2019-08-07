@@ -1,5 +1,5 @@
 controlling
-readGyroscopeSkaliert
+readGyroscopeScaled
 	| gyro gyroX gyroY gyroZ |
 	gyro := self readGyroscope.
 	gyroX := (gyro at: 1)/131 asFloat round: 6.

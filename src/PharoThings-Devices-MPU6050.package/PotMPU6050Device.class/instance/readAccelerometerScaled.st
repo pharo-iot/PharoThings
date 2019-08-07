@@ -1,5 +1,5 @@
 controlling
-readAccelerometerSkaliert
+readAccelerometerScaled
 	| acc accX accY accZ |
 	acc := self readAccelerometer.
 	accX := ((acc at: 1)/16384) asFloat round: 6.
