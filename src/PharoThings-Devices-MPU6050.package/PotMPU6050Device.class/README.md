@@ -17,3 +17,8 @@ readGyroscopeSkaliert. "#(13.526718 -1.916031 -1.526718)"
 readAccelerometer. "#(748 -892 15676)"
 readAccelerometerSkaliert. "#(0.033691 -0.051025 0.974121)"
 readRotationXY. "#(-3.224775339993247 -2.4755961852044157)"
+
+sensor := (RpiBoard3B current) installDevice: PotMPU6050Device new.
+sensor readRollPitchYaw
+sensor printRollPitchYaw.
+sensor finishRollPitchYaw.
