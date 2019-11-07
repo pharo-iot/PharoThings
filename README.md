@@ -234,10 +234,10 @@ The code for initialization and sensors reading is copied from [Python example](
 The method #readTemperature returns the value in Celsius
 
 To use:
-board inspector
+- board inspector
 ```sensor := board installDevice: PotMCP9808Device new.```
 
-playground. change the board model  to your board
+- playground. change the board model  to your board
 ```sensor := (RpiBoard3B current) installDevice: PotMCP9808Device new.```
 
 ### BME280
@@ -307,7 +307,8 @@ or to I2C
 ```lcd := (RpiBoard3B current) installDevice: PotLCD1602DeviceI2C new.```
 
 API:
-```showMessage: 'Hello
+```
+showMessage: 'Hello
 Pharo IoT'.
 clearDisplay.
 disableBlinkCursor.
@@ -324,4 +325,5 @@ setCursorAtRow:1 column:1.
 setLeftAutoScroll.
 setLeftToRight.
 setRightAutoScroll.
-setRightToLeft.```
+setRightToLeft.
+```
