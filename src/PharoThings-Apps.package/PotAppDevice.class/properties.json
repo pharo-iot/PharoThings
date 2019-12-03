@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "StevenCostiou 12/3/2019 15:26",
+	"super" : "PotDevice",
+	"category" : "PharoThings-Apps",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"process",
+		"delay",
+		"deviceName"
+	],
+	"name" : "PotAppDevice",
+	"type" : "normal"
+}
