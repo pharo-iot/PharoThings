@@ -1,3 +1,3 @@
 accessing
 deviceName
-	^deviceName
+	^self subclassResponsibility 
