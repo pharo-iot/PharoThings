@@ -1,3 +1,5 @@
 accessing
 deviceName
-	^self subclassResponsibility 
+	^ deviceName
+		ifNil: [ deviceName := 'anonymous device('
+				, Time now asNanoSeconds printString , ')' ]
