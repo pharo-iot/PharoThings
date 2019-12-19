@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PharoThings-Apps-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"appDevice"
+	],
+	"name" : "PotAppDeviceTests",
+	"type" : "normal"
+}
