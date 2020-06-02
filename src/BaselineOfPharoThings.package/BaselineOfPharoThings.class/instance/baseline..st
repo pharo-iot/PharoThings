@@ -37,18 +37,25 @@ baseline: spec
 			package: #'PharoThings-RemoteToolsServer' with: [
 				spec requires: #('TelePharoServer' ). ];
 			package: #'PharoThings-RemoteToolsClient' with: [
-				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient')]. 
+				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient')];
+			
+			package: 'PharoThings-Apps' with: [
+				spec requires: #('PharoThings-Hardware-Core' ) ];		
+			package: #'PharoThings-Apps-Tests' with: [
+				spec requires: #('PharoThings-Apps') ].
 			
 			self devices do: [ :each | 
 				spec package: each key with: [ spec requires: #(#'PharoThings-Hardware-Core'), each value ]].
 			
 		spec 
+			group: 'Apps' with: #('PharoThings-Apps' 'PharoThings-Apps-Tests');
+		
 			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-I2C' 'Devices');
 			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
 			group: 'Arduino' with: #('Hardware' #'PharoThings-Hardware-Arduino' );
 			group: 'Devices' with: (self devices collect: #key);
 						
-			group: 'LocalDev' with: #('Raspberry' 'Arduino' 'Devices' 'PharoThings-GTTools' 'Tests');
+			group: 'LocalDev' with: #('Raspberry' 'Arduino' 'PharoThings-GTTools' 'Tests' 'Apps' 'Devices');
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );
