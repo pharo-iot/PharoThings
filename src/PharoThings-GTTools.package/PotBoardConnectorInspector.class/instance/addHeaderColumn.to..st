@@ -7,10 +7,10 @@ addHeaderColumn: columnNumber to: aTable
 		evaluated: [ :row | | pin |
 			pin := row at: columnNumber.  
 			headerMorph := pin headerNumber asString asMorph 
-				backgroundColor: pin color;
-				color: pin color contrastingColor;
+				backgroundColor: pin colorForPinout;
+				color: pin colorForPinout contrastingColor;
 				emphasis: TextEmphasis bold emphasisCode.
 			(self pinCellMorphWith: headerMorph for: pin)
-				color: pin color ] 
+				color: pin colorForPinout ] 
 		width: 35
 		

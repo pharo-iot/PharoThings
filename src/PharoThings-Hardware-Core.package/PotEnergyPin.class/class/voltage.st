@@ -1,0 +1,3 @@
+accessing
+voltage
+	self subclassResponsibility 

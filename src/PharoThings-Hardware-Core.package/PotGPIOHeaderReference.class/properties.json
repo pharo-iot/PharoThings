@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"connectorName"
+	],
+	"name" : "PotGPIOHeaderReference",
+	"type" : "normal"
+}

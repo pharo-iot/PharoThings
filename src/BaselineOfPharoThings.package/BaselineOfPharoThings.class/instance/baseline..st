@@ -4,16 +4,16 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			baseline: 'Mocketry' with: [
-				spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ];
+				spec repository: 'github://dionisiydk/Mocketry:v6.0.2' ];
 			baseline: 'TelePharo' with: [
-				spec repository: 'github://dionisiydk/TelePharo:v0.3.x' ];
+				spec repository: 'github://pharo-ide/TelePharo:v0.4.0' ];
 			project: 'TelePharoServer' copyFrom: 'TelePharo' with: [
 				spec loads: 'Server'];
 			project: 'TelePharoClient' copyFrom: 'TelePharo' with: [
 				spec loads: 'Client'];
 			baseline: 'WiringPi' with: [
 				spec 
-					repository: 'github://pharo-iot/WiringPi:v0.1.x';
+					repository: 'github://pharo-iot/WiringPi:v0.1.2';
 					loads: 'Core' ].		
 		
 		spec 
@@ -30,25 +30,32 @@ baseline: spec
 				spec requires: #('PharoThings-Hardware-Core' #'WiringPi' ). ];
 			
 			baseline: 'Firmata' with: [
-				spec repository: 'github://pharo-iot/Firmata:v0.1.x'];			
+				spec repository: 'github://pharo-iot/Firmata:v0.1.1'];			
 			package: #'PharoThings-Hardware-Arduino' with: [
 				spec requires: #('PharoThings-Hardware-Core' #'Firmata' ). ];
 						
 			package: #'PharoThings-RemoteToolsServer' with: [
 				spec requires: #('TelePharoServer' ). ];
 			package: #'PharoThings-RemoteToolsClient' with: [
-				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient')]. 
+				spec requires: #('PharoThings-RemoteToolsServer' 'TelePharoClient')];
+			
+			package: 'PharoThings-Apps' with: [
+				spec requires: #('PharoThings-Hardware-Core' ) ];		
+			package: #'PharoThings-Apps-Tests' with: [
+				spec requires: #('PharoThings-Apps') ].
 			
 			self devices do: [ :each | 
 				spec package: each key with: [ spec requires: #(#'PharoThings-Hardware-Core'), each value ]].
 			
 		spec 
+			group: 'Apps' with: #('PharoThings-Apps' 'PharoThings-Apps-Tests');
+		
 			group: 'Hardware' with: #('PharoThings-Hardware-Core' #'PharoThings-Devices-I2C' 'Devices');
 			group: 'Raspberry' with: #('Hardware' #'PharoThings-Hardware-RaspberryPi' );
 			group: 'Arduino' with: #('Hardware' #'PharoThings-Hardware-Arduino' );
 			group: 'Devices' with: (self devices collect: #key);
 						
-			group: 'LocalDev' with: #('Raspberry' 'Arduino' 'Devices' 'PharoThings-GTTools' 'Tests');
+			group: 'LocalDev' with: #('Raspberry' 'Arduino' 'PharoThings-GTTools' 'Tests' 'Apps' 'Devices');
 			group: 'RemoteDev' with: #('LocalDev' #'PharoThings-RemoteToolsClient');
 			group: 'RemoteDevServer' with: #('Hardware' #'PharoThings-RemoteToolsServer' );
 			group: 'Tests' with: #('PharoThings-Hardware-Core-Tests' );

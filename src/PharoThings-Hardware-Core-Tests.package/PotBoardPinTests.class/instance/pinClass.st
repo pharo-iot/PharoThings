@@ -1,3 +1,0 @@
-running
-pinClass
-	^ PotBoardPin

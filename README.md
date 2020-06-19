@@ -12,6 +12,12 @@ It includes:
 
 Now PharoThings is in beta stage together with documentation and videos. It will be improved constantly.
 
+## PharoThings Booklet
+
+You can access the **PharoThings Booklet** with many examples and lessons from the official repository:
+
+https://github.com/SquareBracketAssociates/Booklet-APharoThingsTutorial
+
 ## Installation on Raspberry
 
 1) Download Pharo 6 and install the server part of PharoThings:
@@ -36,6 +42,18 @@ At the end save the image.
 If you use the latest desktop version of Raspbian skip this step (WiringPi is included). The Light Raspbian version is required manual installation of WiringPi.
 
 PharoThings uses WiringPi to control Raspberry pins. You need install it in your board. There is a convenient prebuilt package [here](https://github.com/hamishcunningham/wiringpi/tree/master/package/2.13/unstable). Follow [install](https://github.com/hamishcunningham/wiringpi/blob/master/INSTALL) instructions or do it your own way.
+
+You can test the WiringPi library in terminal. More information [here](http://wiringpi.com/the-gpio-utility/)
+```
+gpio readall
+```
+
+If you receive any error, you should update the WiringPi library:
+```
+cd /tmp
+wget https://unicorn.drogon.net/wiringpi-2.46-1.deb
+sudo dpkg -i wiringpi-2.46-1.deb
+```
 
 5) Start Pharo on Raspberry with the server option:
 ```bash
@@ -215,6 +233,13 @@ The code for initialization and sensors reading is copied from [Python example](
 	
 The method #readTemperature returns the value in Celsius
 
+To use:
+- board inspector
+```sensor := board installDevice: PotMCP9808Device new.```
+
+- playground. change the board model  to your board
+```sensor := (RpiBoard3B current) installDevice: PotMCP9808Device new.```
+
 ### BME280
 PotBME280Device implements temperature/pressure/humidity sensor BME280.
 
@@ -223,9 +248,82 @@ The code for initialization and sensors reading is copied from [Python example](
 The method #readParameters returns three values: Celsius, hPa, humidity percents.
 In addition there is method #readTemperature to get single value.
 
+To use:
+- board inspector
+```sensor := board installDevice: PotBME280Device new.```
+
+- board playground. change the board model  to your board
+```sensor := (RpiBoard3B current) installDevice: PotBME280Device new.```
+
 ### ADXL345
 PotADXL345Device implements accelerometer ADXL345.
 
 The code for initialization and sensors reading is copied from [sunfolder example](https://www.sunfounder.com/learn/Super_Kit_V2_for_RaspberryPi/lesson-14-adxl345-super-kit-for-raspberrypi.html).
 	
 The method #readCoordinates returns three values array.
+
+To use:
+- board inspector
+sensor := board installDevice: PotADXL345Device new.
+
+- playground. change the board model  to your board
+sensor := (RpiBoard3B current) installDevice: PotADXL345Device new.
+
+### HCSR-04 ultrasonic
+PotHCSR04Device implements HCSR-04 ultrasonic sensor
+
+To use:
+- board inspector
+```ultrasonic := board installDevice: (PotHCSR04Device triggerPin: 17 gpio echoPin: 27 gpio).```
+
+- playground, change the board model to your board
+```ultrasonic := (RpiBoard3B current) installDevice: (PotHCSR04Device triggerPin: 17 gpio echoPin: 27 gpio).```
+
+To read the distance use one of the method below. 
+```
+readDistance. "It will return a number".
+printDistance. "It will return a string".
+```
+Reboot the sensor:
+
+```
+rebootSensor.
+```
+
+### HD44780 LCD chipset
+PotLCDHD44780 implements LCD controller to all devices using this chipset. 
+
+PotLCD1602Device and PotLCD1602DeviceI2C implements LCD1602 display using GPIOs and I2C interface.
+
+To use:
+- board inspector
+```lcd := board installDevice: PotLCD1602Device new.```
+or to I2C
+```lcd := board installDevice: PotLCD1602DeviceI2C new.```
+
+- playground. change the board model  to your board
+```lcd := (RpiBoard3B current) installDevice: PotLCD1602Device new.```
+or to I2C
+```lcd := (RpiBoard3B current) installDevice: PotLCD1602DeviceI2C new.```
+
+API:
+```
+showMessage: 'Hello
+Pharo IoT'.
+clearDisplay.
+disableBlinkCursor.
+disableDisplay.
+disableUnderlineCursor. 
+enableBlinkCursor.
+enableDisplay.
+enableUnderlineCursor.
+moveCursorLeft. 
+moveCursorRight.
+returnHome.
+setCursorAtRow:2.
+setCursorAtRow:1 column:1.
+setLeftAutoScroll.
+setLeftToRight.
+setRightAutoScroll.
+setRightToLeft.
+```

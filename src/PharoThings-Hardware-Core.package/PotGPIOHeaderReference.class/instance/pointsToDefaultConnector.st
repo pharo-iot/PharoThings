@@ -1,0 +1,3 @@
+testing
+pointsToDefaultConnector
+	^connectorName = #default

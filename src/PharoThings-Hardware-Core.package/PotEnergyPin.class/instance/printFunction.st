@@ -1,0 +1,3 @@
+accessing
+printFunction
+	^self name

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PotSerialPortFunction",
+	"category" : "PharoThings-Hardware-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotSerialPortTXDFunction",
+	"type" : "normal"
+}

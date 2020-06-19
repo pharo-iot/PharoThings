@@ -1,3 +1,3 @@
 controlling
 readHumidity
-	^self readParameters last
+	^self readParameters last round: 1

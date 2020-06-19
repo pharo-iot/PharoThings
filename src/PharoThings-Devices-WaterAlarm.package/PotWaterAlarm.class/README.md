@@ -11,4 +11,3 @@ Internal Representation and Key Implementation Points.
     Instance Variables
 	alarmPin:		<PotBoardPin>
 	waterSensor:		<PotDevice>
-	trackingProcess:		<Process>

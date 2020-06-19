@@ -2,9 +2,9 @@ tests
 testGettingPinAtRowColumn
 
 	| pin1 pin2 pin3 |
-	pin1 := PotBoardIOPin id: 10.
-	pin2 := PotBoardIOPin id: 20.
-	pin3 := PotBoardIOPin id: 30.
+	pin1 := PotGPIO id: 10.
+	pin2 := PotGPIO id: 20.
+	pin3 := PotGPIO id: 30.
 	connector pins: {  pin1. pin2. pin3 }.
 	
 	(connector pinAtRow: 1 column: 1) should be: pin1.

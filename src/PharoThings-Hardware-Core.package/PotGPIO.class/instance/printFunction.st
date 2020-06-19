@@ -1,0 +1,3 @@
+printing
+printFunction
+	^function name
