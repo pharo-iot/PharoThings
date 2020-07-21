@@ -18,6 +18,6 @@ export PHARO_SCRIPT="Iceberg enableMetacelloIntegration: false.
 Metacello new
   baseline: 'PharoThings';
   repository: 'github://pharo-iot/PharoThings/src';
-  load.
+  load: #(RemoteDevServer Raspberry RemoteDev).
 Iceberg enableMetacelloIntegration: true.
 Smalltalk saveSession."
