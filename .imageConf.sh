@@ -20,4 +20,6 @@ Metacello new
   repository: 'github://pharo-iot/PharoThings/src';
   load: #(RemoteDevServer Raspberry RemoteDev).
 Iceberg enableMetacelloIntegration: true.
+HelpBrowser allInstances do: #close.
+WelcomeHelp open.
 Smalltalk saveSession."
