@@ -8,7 +8,7 @@ addHeaderColumn: columnNumber to: aTable
 			pin := row at: columnNumber.  
 			headerMorph := pin headerNumber asString asMorph 
 				backgroundColor: pin colorForPinout;
-				color: pin colorForPinout contrastingColor;
+				color: pin colorForPinout veryMuchLighter;
 				emphasis: TextEmphasis bold emphasisCode.
 			(self pinCellMorphWith: headerMorph for: pin)
 				color: pin colorForPinout ] 
