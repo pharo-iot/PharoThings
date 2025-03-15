@@ -1,5 +1,8 @@
-# PharoThings
+# PharoThings (archived)
 [![Build Status](https://travis-ci.org/pharo-iot/PharoThings.svg?branch=master)](https://travis-ci.org/pharo-iot/PharoThings)
+
+This project is right now on sleeping mode. We do not have the resources to maintain it and evolve it. 
+
 
 Live programming platform for IoT projects based on [Pharo](http://pharo.org).
 It includes:
